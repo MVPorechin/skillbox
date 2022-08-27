@@ -10,11 +10,11 @@
 # #
 # #
 #
-# for i in range(1, 10):
-#     for j in range(1, 10):
-#         print(i * j, end='\t')
-#     print()
-#
+for i in range(1, 11):
+    for j in range(1, 9):
+        print(i * j, end='\t')
+    print()
+
 # # Задача 2. Калькулятор
 # #
 # # Напишите программу калькулятор. Пользователь вводит два числа A и B и действие X (плюс, минус, умножить, разделить).
@@ -56,26 +56,26 @@
 # #
 # #
 #
-# while True:
-#     command = input("Выберите операцию: ")
-#     if command in "+-*/":
-#         break
-#     print("Ошибка: такой операции не существует. Попробуйте ещё раз.")
-#
-# first = int(input("Введите первое число: "))
-# second = int(input("Введите второе число: "))
-#
-# result = 0
-# if command == "+":
-#     result = first + second
-# elif command == "-":
-#     result = first - second
-# elif command == "*":
-#     result = first * second
-# elif command == "/":
-#     result = first / second
-#
-# print(f"{first} {command} {second} = {result}")
+while True:
+    command = input("Выберите операцию: ")
+    if command in "+-*/":
+        break
+    print("Ошибка: такой операции не существует. Попробуйте ещё раз.")
+
+first = int(input("Введите первое число: "))
+second = int(input("Введите второе число: "))
+
+result = 0
+if command == "+":
+    result = first + second
+elif command == "-":
+    result = first - second
+elif command == "*":
+    result = first * second
+elif command == "/":
+    result = first / second
+
+print(f"{first} {command} {second} = {result}")
 #
 # # Задача 3. Калькулятор 2
 # #
@@ -109,23 +109,23 @@
 #         break
 #     print("Ошибка: такой операции не существует. Попробуйте ещё раз.")
 #
-# count = 1
-# number = int(input(f"Введите число {count}: "))
-# result_str = str(number)
-# result = number
-# while number != 0:
-#     count += 1
-#     number = int(input(f"Введите число {count}: "))
-#
-#     if command == "+":
-#         result += number
-#     elif command == "-":
-#         result -= number
-#     elif command == "*":
-#         result *= number
-#     elif command == "/":
-#         result /= number
-#     result_str += " " + command + " " + str(number)
-#
-# print(result_str + " = " + str(result))
+count = 0
+number = int(input(f"Введите число {count}: "))
+result_str = str(number)
+result = number
+while number != 1.e-15:
+    count += 1
+    number = int(input(f"Введите число {count}: "))
+
+    if command == "+":
+        result += number
+    elif command == "-":
+        result -= number
+    elif command == "*":
+        result *= number
+    elif command == "/":
+        result /= number
+    result_str += " " + command + " " + str(number)
+
+print(result_str + " = " + str(result))
 

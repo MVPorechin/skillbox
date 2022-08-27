@@ -1,3 +1,4 @@
+print('14.3 Командная строка и интерпретатор')
 print('Задача 1. Таблица умножения: возвращение')
 
 for i in range(1, 10):
@@ -55,3 +56,17 @@ while number != 0:
     result_str += " " + command + " " + str(number)
 
 print(result_str + " = " + str(result))
+
+print('14.4 Работа в PyCharm. Отладка программ')
+print('Задача 2. НОД')
+def gcd(a, b):
+
+    while a != 0 and b != 0:
+        if a > b:
+            a = a % b
+        else:
+            b = b % a
+
+    print('Наибольший общий делитель:', a + b)
+
+gcd(30, 18)

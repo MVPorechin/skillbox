@@ -136,3 +136,16 @@
 # print('\nПодсчет слов в тексе: ')
 # for i in range(3):
 #     print(f'{words_list[i]} : {counts[i]}')
+
+print('m15 Задача 3.1. Текстовый редактор: возвращение')
+# user_msg = input("Введите строку: ")
+user_msg = 'гвозди:шурупы:гайки'
+letters = list(user_msg)
+what_replace = ':'
+for_what_replace = ';'
+for index, letter in enumerate(letters):
+    if letter == what_replace:
+        letters[index] = for_what_replace
+
+for letter in letters:
+    print(letter, end='')

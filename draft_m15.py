@@ -119,4 +119,20 @@
 #
 # print(sym_list)
 
-words_list = []
+# words_list = []
+# counts = [0, 0, 0]
+# for i in range(3):
+#     print(f'Введите {i + 1} слово: ', end='')
+#     word = input()
+#     words_list.append(word)
+#
+# text = input('Слово из текса: ')
+# while text != 'end':
+#     for index in range(3):
+#         if words_list[index] == text:
+#             counts[index] += 1
+#     text = input('Слово из текса: ')
+#
+# print('\nПодсчет слов в тексе: ')
+# for i in range(3):
+#     print(f'{words_list[i]} : {counts[i]}')

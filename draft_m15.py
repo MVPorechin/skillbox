@@ -1,4 +1,4 @@
-# print('m14 Задача 1. Таблица степеней')
+# print('m15 Задача 1. Таблица степеней')
 # numbers = [3, 7, 5]
 # while True:
 #     number = int(input('Новое число: '))
@@ -8,13 +8,13 @@
 #         print(_ ** 2, _ ** 3, _ ** 4)
 # print()
 
-# print('m14 Задача 1. Очень простая задача')
+# print('m15 Задача 1. Очень простая задача')
 # list = []
-# for _ in range(0,101):
+# for _ in range(100):
 #     list.append(_)
 # print(list)
 
-# print('m14 Задача 3. Контроль')
+# print('m15 Задача 3. Контроль')
 # count_personal = int(input('Введите кол-во сотрудников: '))
 # list_id = []
 # for _ in range(count_personal):
@@ -26,7 +26,7 @@
 # else:
 #     print('Все сотрудники на работе')
 
-# print('m14 Задача 1. Гугл')
+# print('m15 Задача 1. Гугл')
 # nums_list = []
 # N = int(input('Кол-во чисел в списке: '))
 #
@@ -46,7 +46,7 @@
 # print(f'Максимальное число в списке: {maximum}')
 # print(f'Минимальное число в списке: {minimum}')
 
-# print('m14 Задача  2. Кратность')
+# print('m15 Задача  2. Кратность')
 # nums_list = []
 # N = int(input('Кол-во чисел в списке: '))
 #
@@ -70,36 +70,36 @@
 #         print(f'Индекс числа {number}: {index}')
 #         sum_indexes += index
 
-print('m14 Задача 3. Собачьи бега')
-nums_list = []
-
-N = int(input('Кол-во чисел в списке: '))
-
-for _ in range(N):
-    num = int(input('Очередное число: '))
-    nums_list.append(num)
-
-if nums_list:
-    maximum = nums_list[0]
-    minimum = nums_list[0]
-
-    minimum_index = 0
-    maximum_index = 0
-    for index, i in enumerate(nums_list):
-
-        if maximum < i:
-            maximum = i
-            maximum_index = index
-
-        if minimum > i:
-            minimum = i
-            minimum_index = index
-
-    print('Максимальное число в списке:', maximum)
-    print('Минимальное число в списке:', minimum)
-
-    print(nums_list)
-    nums_list[minimum_index], nums_list[maximum_index] = nums_list[maximum_index], nums_list[minimum_index]
-    print(nums_list)
-else:
-    print('В списке нету чисел')
+# print('m15 Задача 3. Собачьи бега')
+# nums_list = []
+#
+# N = int(input('Кол-во чисел в списке: '))
+#
+# for _ in range(N):
+#     num = int(input('Очередное число: '))
+#     nums_list.append(num)
+#
+# if nums_list:
+#     maximum = nums_list[0]
+#     minimum = nums_list[0]
+#
+#     minimum_index = 0
+#     maximum_index = 0
+#     for index, i in enumerate(nums_list):
+#
+#         if maximum < i:
+#             maximum = i
+#             maximum_index = index
+#
+#         if minimum > i:
+#             minimum = i
+#             minimum_index = index
+#
+#     print('Максимальное число в списке:', maximum)
+#     print('Минимальное число в списке:', minimum)
+#
+#     print(nums_list)
+#     nums_list[minimum_index], nums_list[maximum_index] = nums_list[maximum_index], nums_list[minimum_index]
+#     print(nums_list)
+# else:
+#     print('В списке нету чисел')

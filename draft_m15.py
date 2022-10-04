@@ -137,15 +137,26 @@
 # for i in range(3):
 #     print(f'{words_list[i]} : {counts[i]}')
 
-print('m15 Задача 3.1. Текстовый редактор: возвращение')
-# user_msg = input("Введите строку: ")
-user_msg = 'гвозди:шурупы:гайки'
-letters = list(user_msg)
-what_replace = ':'
-for_what_replace = ';'
-for index, letter in enumerate(letters):
-    if letter == what_replace:
-        letters[index] = for_what_replace
+# print('m15 Задача 3.1. Текстовый редактор: возвращение')
+#
+# user_msg = 'гвозди:шурупы:гайки'
+# letters = list(user_msg)
+# what_replace = ':'
+# for_what_replace = ';'
+# for index, letter in enumerate(letters):
+#     if letter == what_replace:
+#         letters[index] = for_what_replace
+#
+# for letter in letters:
+#     print(letter, end='')
+#
+print('m15 Задача 3.2.Соседи')
+user_string = input('Введите строку: ')
+letters = list(user_string)
+number_letters = int(input('Введите номер символа: '))
+print(f'Символ слева: {letters[number_letters - 2]}')
+print(f'Символ справа: {letters[number_letters]}')
 
-for letter in letters:
-    print(letter, end='')
+for index, letter in enumerate(letters):
+    if letter == letters[number_letters - 1]:
+        print(f'Есть ровно один такой же символ {letters[number_letters - 1 ]}')

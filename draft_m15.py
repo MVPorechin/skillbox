@@ -153,10 +153,15 @@
 print('m15 Задача 3.2.Соседи')
 user_string = input('Введите строку: ')
 letters = list(user_string)
-number_letters = int(input('Введите номер символа: '))
-print(f'Символ слева: {letters[number_letters - 2]}')
-print(f'Символ справа: {letters[number_letters]}')
+number_letters = int(input('Введите номер символа: ')) - 1
+count = 0
+print(f'Символ слева: {letters[number_letters - 1]}')
+print(f'Символ справа: {letters[number_letters + 1]}')
 
 for index, letter in enumerate(letters):
     if letter == letters[number_letters - 1]:
-        print(f'Есть ровно один такой же символ {letters[number_letters - 1 ]}')
+        count += 1
+
+if count >= 2:
+    print(f'Есть ровно один такой же символ {letters[number_letters ]}')
+elif count

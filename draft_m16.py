@@ -102,25 +102,25 @@ print('m16.2 - Задача 3. Пакеты')
 # Напишите программу, которая будет обрабатывать полученные пакеты и выведет на экран итоговое сообщение для декодирования,
 # а также количество ошибок в нём и количество необработанных пакетов.
 #
-pack = []
-decode = []
-bad_packs = 0
-packs_amt = int(input('Кол-во пакетов: '))
-
-for i_pack_num in range (packs_amt):
-    print(f'Пакет номер {i_pack_num + 1}')
-    for i_bit in range(4):
-        num = int(input(f'Бит {i_bit + 1} :'))
-        pack.append(num)
-    if pack.count(-1) <= 1:
-        decode.extend(pack)
-    else:
-        print('Много ошибок в пакете')
-        bad_packs += 1
-    pack = []
-print(f'\nПолученное сообщение: {decode}')
-print(f'Кол-во ощибок в сообщении: {decode.count(-1)}')
-print(f'Кол-во потерянных пакетов: {bad_packs}')
+# pack = []
+# decode = []
+# bad_packs = 0
+# packs_amt = int(input('Кол-во пакетов: '))
+#
+# for i_pack_num in range (packs_amt):
+#     print(f'Пакет номер {i_pack_num + 1}')
+#     for i_bit in range(4):
+#         num = int(input(f'Бит {i_bit + 1} :'))
+#         pack.append(num)
+#     if pack.count(-1) <= 1:
+#         decode.extend(pack)
+#     else:
+#         print('Много ошибок в пакете')
+#         bad_packs += 1
+#     pack = []
+# print(f'\nПолученное сообщение: {decode}')
+# print(f'Кол-во ощибок в сообщении: {decode.count(-1)}')
+# print(f'Кол-во потерянных пакетов: {bad_packs}')
 
 # number_of_msgs = int(input("Количество пакетов: "))
 # result_msg = []
@@ -142,3 +142,43 @@ print(f'Кол-во потерянных пакетов: {bad_packs}')
 # print("Полученное сообщение:", result_msg)
 # print("Кол-во ошибок в сообщении:", result_msg.count(-1))
 # print("Кол-во потерянных пакетов:", lost_packages)
+
+# N = int(input('Кол-во участников: '))
+# members = list(range(1, N + 1))
+# print(members)
+
+# N = int(input('Кол-во участников: '))
+# members = []
+# num = 1
+# for _ in range(N // 3):
+#     members.append(list(range(num, num + 3)))
+#     num += 3
+# print(f'\n{members}')
+# print('')
+# for i_team in members:
+#     print(i_team)
+#     print('')
+# for i_team in members:
+#     for i_man in i_team:
+#         print(i_man, end= ' ')
+#     print()
+#
+# вложенные списки
+# words_list = [['', 0], ['', 0], ['', 0]]
+#
+# for i_num in range(3):
+#     word = input(f'Введите {i_num + 1} слово: ')
+#     words_list[i_num][0] = word
+#
+# text = input('Слово из текста: ')
+# while text != 'end':
+#     for index in range(3):
+#         if words_list[index][0] == text:
+#             words_list[index][1] += 1
+#     text = input('Слово из текста: ')
+#
+# print('\n Подсчет слов в тексте:')
+# for index in range(3):
+#     print(f'{words_list[index]} : {words_list[index][1]}')
+
+print('m16.3 - Задача 1. Матрица')

@@ -39,14 +39,25 @@ print('17.1 - Задача 3. Повышение цен')
 # Дан список цен на пять товаров с точностью до копейки. Так как экономика даёт о себе знать, мы спрогнозировали, что через год придётся повышать цены на X процентов, а ещё через один год — ещё на Y процентов.
 # Напишите программу, которая получает на вход список цен на товары (вещественные числа, список генерируется также с помощью list comprehensions) и выводит в одну строку общую сумму стоимости товаров за каждый год.
 
-prices = [float(input("Цена на товар: ")) for _ in range(5)]
+prices = [float(input('Цена за товар :')) for _ in range(5)]
+first_year_percent = int(input('Повышение на первый год: '))
+second_year_percent = int(input('Повышение на второй год: '))
 
-first_year = int(input("Повышение на первый год: "))
-second_year = int(input("Повышение на второй год: "))
-
-all_prices = "Сумма цен за каждый год: "
-for percent in 0, first_year, second_year:
+result_prices = 'Сумма цен за каждый год: '
+for percent in 0, first_year_percent, second_year_percent:
     prices = [price * (1 + percent / 100) for price in prices]
-    all_prices += f" {round(sum(prices), 2)}"
+    result_prices += f'{round(sum(prices), 2)}'
 
-print(all_prices)
+
+print(result_prices)
+# prices = [float(input("Цена на товар: ")) for _ in range(5)]
+#
+# first_year = int(input("Повышение на первый год: "))
+# second_year = int(input("Повышение на второй год: "))
+#
+# all_prices = "Сумма цен за каждый год: "
+# for percent in 0, first_year, second_year:
+#     prices = [price * (1 + percent / 100) for price in prices]
+#     all_prices += f" {round(sum(prices), 2)}"
+#
+# print(all_prices)

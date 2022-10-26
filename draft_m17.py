@@ -57,17 +57,7 @@
 # print(f'{squares_odds}\n')
 # print(f'{squares_cubes}\n')
 #
-import random
-#
-# squad_1 = [random.randint(50, 80) for _ in range(10)]
-# squad_2 = [random.randint(30, 60) for _ in range(10)]
-# squad_3_condition = [('Погиб' if squad_1[i_damage] + squad_2[i_damage] > 100
-#                       else 'Выжил')
-#                      for i_damage in range(10)]
-#
-# print(f'Урон от первого отряда {squad_1}')
-# print(f'Урон от первого отряда {squad_2}')
-# print(f'Урон от первого отряда {squad_3_condition}')
+
 
 # print('17.2 - Задача 1. Список чётных чисел')
 # # Пользователь вводит два числа: А и В. Реализуйте код, который генерирует список из чётных чисел в диапазоне от А до B. Используйте list comprehensions (как и в следующих задачах).
@@ -78,6 +68,22 @@ import random
 #
 # print(f'Результат от {numbers_a} до {numbers_b} : {condition}')
 
-original_prices = [1.25, -9.45, 10.22, 3.78, -5.92, 1.16]
-prices = [price if price > 0 else 0 for price in original_prices]
-print(f'Результат : {prices}')
+# original_prices = [1.25, -9.45, 10.22, 3.78, -5.92, 1.16]
+# prices = [price if price > 0 else 0 for price in original_prices]
+# print(f'Результат : {prices}')
+
+print('17.4 - Задача 3. Отряды')
+# Мы продолжаем пробовать себя в качестве разработчика игр. Теперь нужно написать небольшую логику поведения некоторых отрядов, а также их урон. Есть два отряда, в каждом по 10 монстров. В первом отряде у каждого монстра урон абсолютно случайный и колеблется от 50 до 80, а во втором — от 30 до 60. Оба отряда вместе напали на третий, также из 10 юнитов. Юнит третьего отряда погибает, если сумма урона от двух монстров больше 100.
+#
+# Напишите программу, которая генерирует случайные значения в первых двух списках в заданных диапазонах, а также генерирует список, состоящий из фраз «Погиб» или «Выжил». Выведите все списки на экран.
+import random
+
+squad_1 = [random.randint(50, 80) for _ in range(10)]
+squad_2 = [random.randint(30, 60) for _ in range(10)]
+squad_3_condition = [('Погиб' if squad_1[i_damage] + squad_2[i_damage] > 100
+                      else 'Выжил')
+                     for i_damage in range(10)]
+
+print(f'Урон от первого отряда: {squad_1}')
+print(f'Урон от первого отряда: {squad_2}')
+print(f'Состояние третьего отряда: {squad_3_condition}')

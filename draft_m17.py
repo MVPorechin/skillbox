@@ -79,5 +79,5 @@ import random
 # print(f'Результат от {numbers_a} до {numbers_b} : {condition}')
 
 original_prices = [1.25, -9.45, 10.22, 3.78, -5.92, 1.16]
-new_prices = [price if price > 0 else 0 for price in original_prices]
-print("Результат:\n\n", new_prices, sep="")
+prices = [price if price > 0 else 0 for price in original_prices]
+print(f'Результат : {prices}')

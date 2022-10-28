@@ -79,10 +79,10 @@
 # import random
 #
 # squad_1 = [random.randint(50, 80) for _ in range(10)]
-# squad_2 = [random.randint(30, 60) for _ in range(10)]
+# squad_2 = [random.randint     for i_damage in range(10)]
+#(30, 60) for _ in range(10)]
 # squad_3_condition = [('Погиб' if squad_1[i_damage] + squad_2[i_damage] > 100
 #                       else 'Выжил')
-#                      for i_damage in range(10)]
 #
 # print(f'Урон от первого отряда: {squad_1}')
 # print(f'Урон от первого отряда: {squad_2}')
@@ -105,6 +105,43 @@
 #
 # print(f'{new_nums[2:8]}')
 
-nums[2:8:2]  # от 2 до 8 индекс, с шагом 2
-nums[::-1]  # перевернуть список - "отзеркалить"
+# nums[2:8:2]  # от 2 до 8 индекс, с шагом 2
+# nums[::-1]  # перевернуть список - "отзеркалить"
 
+# start_sequence = [1, 2, 3, 4, 5]
+# finish_sequence = []
+# count_sequence = int(input('Кол-во чисел: '))
+# for _ in range(1, count_sequence + 1):
+#     number = int(input('Число: '))
+#     start_sequence.append(number)
+# print(f'Последовательность: {start_sequence}')
+
+
+# def symmetry(start_sequence):
+#     reverse_list = start_sequence[::-1]
+#     if start_sequence == reverse_list:
+#         return True
+#     else:
+#         return False
+#
+#
+# for i_nums in range(0, len(start_sequence)):
+#     if symmetry(start_sequence[i_nums:len(start_sequence)]):
+#         finish_sequence = start_sequence[:i_nums]
+#         finish_sequence.reverse()
+#         break
+#
+# print(f'Исходный список:  {start_sequence}')
+# print(f'Нужно чисел: {len(finish_sequence)}\nCписок этих чисел: {finish_sequence}')
+
+# print('17.4 - Задача 1. Анализ цен')
+# Нашему другу заказали написать программу, которая анализирует цены на бирже. Она получает этот пакет данных, но делать что-либо с ним нельзя. Для нормальной работы аналитической программы берётся новый список, который равен тому, что пришло. Затем идёт работа с новым списком: если есть отрицательные цены, то программа их зануляет и в конце выводит на экран, сколько денег мы по итогу потеряли. Получился вот такой код:
+# Однако при таких входных данных программа почему-то работает неправильно: она выводит ответ 0, когда правильный ответ 14. Помогите другу исправить программу, а также сделайте так, чтобы список цен генерировался случайно (диапазон можно выбрать любой)
+import random
+original_prices = [random.randint()]
+new_prices = original_prices[:]
+for i in range(len(original_prices)):
+    if new_prices[i] < 0:
+        new_prices[i] = 0
+
+print(f'Мы потеряли: {sum(original_prices) - sum(new_prices)}')

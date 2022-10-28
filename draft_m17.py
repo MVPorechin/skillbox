@@ -88,12 +88,13 @@
 # print(f'Урон от первого отряда: {squad_2}')
 # print(f'Состояние третьего отряда: {squad_3_condition}')
 
-nums = [x for x in range(1, 101) if x % 10 == 0]
-new_nums = nums[:]
+# nums = [x for x in range(1, 101) if x % 10 == 0]
+# new_nums = nums[:]
 # new_nums[3] = 0
-print(new_nums[3:])  # от 3 индекса
-print(new_nums[:5])  # до 5 индекса
-print(new_nums[2:5])  # от 2 до 5 индекса
+# print(new_nums[:])
+# print(new_nums[3:])  # от 3 индекса
+# print(new_nums[:5])  # до 5 индекса
+# print(new_nums[2:5])  # от 2 до 5 индекса
 # for i_elem in range(2, 8):
 #     print(nums[i_elem], end = ' ')
 #
@@ -101,5 +102,9 @@ print(new_nums[2:5])  # от 2 до 5 индекса
 #
 # for i_elem in range(2, 8):
 #     print(new_nums[i_elem], end = ' ')
+#
+# print(f'{new_nums[2:8]}')
 
-print(f'{new_nums[2:8]}')
+nums[2:8:2]  # от 2 до 8 индекс, с шагом 2
+nums[::-1]  # перевернуть список - "отзеркалить"
+

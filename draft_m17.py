@@ -176,13 +176,18 @@
 # print(f'Получаем список : {nums}')
 # print(f'Убираем числа с индексом от {first_number} до {second_number}\nРезультат: {nums[:first_number] + nums[second_number + 1:]}')
 
-print('17.5 Строки: индексы и срезы')
+# print('17.5 Строки: индексы и срезы')
 word = 'Привет'
+#
+# first_part = word[:len(word) // 2]
+# print(first_part[::-1])
+#
+# second_part = word[:len(word) // 2:]
+# print(second_part[::-1])
+#
+# print(first_part[::-1] + second_part[::-1])
+print(word[1:])
+print(word[:10])
+print(word[1:5])
 
-first_part = word[:len(word) // 2]
-print(first_part[::-1])
-
-second_part = word[:len(word) // 2:]
-print(second_part[::-1])
-
-print(first_part[::-1] + second_part[::-1])
+print(word[::-1])

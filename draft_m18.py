@@ -163,3 +163,95 @@
 
 # people = [" ".join([names_list[index], str(ages[index])]) for index in range(len(names_list))]
 # print("Именинники:", ", ".join(people))
+
+# user_name = input('Введите имя пользователя: ')
+# file_name = input('Введите имя файла: ')
+#
+# path = 'C:/Users/{user}/{new_file}'.format(
+#     user=user_name,
+#     new_file=file_name
+# )
+#
+# if not path.endswith('.txt'):
+#     print('Ошибка: не верное расширение файла')
+# elif not path.startswith('C:/'):
+#     print('Ошибка: неверно указан диск')
+# else:
+#     print(f'Путь к файлу: {path}')
+
+# words_list = []
+#
+# for i_num in range(1, 4):
+#     # word = input(f'Введите {i_num} слово: ').lower()
+#     word = input(f'Введите {i_num} слово: ').upper()
+#
+#     words_list.append(word)
+#
+# # text = input('Введите текст: ').lower().split()
+# text = input('Введите текст: ').upper().split()
+#
+#
+# print(f'Подсчет слов в тексте: ')
+# for index in range(3):
+#     print(f'{words_list[index]} : {text.count(words_list[index])}')
+
+# print('Задача 1. Шифр Цезаря 2')
+# Мы уже писали программу, которая шифрует строку с помощью шифра Цезаря. Напомним, что в таком способе шифрования каждая буква заменяется на следующую по алфавиту через K позиций по кругу.
+# Напишите (модифицируйте) программу, которая реализует этот алгоритм шифрования. Не используйте конкатенацию и сделайте так, чтобы текст был в одном регистре.
+
+# print(ord("а"), ord("я"), ord("ё"), chr(1104))
+#
+# text = input("Введите текст: ")
+# delta = int(input("Введите сдвиг: "))
+# alphabet = [chr(index) for index in range(ord("а"), ord("я") + 1)]  # заполняем список буквами алфавита
+# # Думаем над структурой алгоритма: [вариант_1 если условие_1 иначе вариант_2 for буква in текст]
+# new_text = [alphabet[(alphabet.index(letter) + delta) % len(alphabet)] if letter in alphabet else letter for letter in text.lower()]
+# print(''.join(new_text))
+
+# print('Задача 2. Путь к файлу')
+# Все данные сайта лежат в одном проекте. При написании кода, внутри этого проекта часто используются абсолютные пути файлов, которые необходимо проверять.
+# Пользователь вводит абсолютный путь к текстовому файлу, а также проверяемые данные: диск и расширение файла. Напишите программу, которая проверяет корректность этого пути.
+#
+# user_name = input('Введите имя пользователя: ')
+# file_name = input('Введите имя файла: ')
+#
+# path = 'C:/Users/{user}/{new_file}'.format(
+#     user=user_name,
+#     new_file=file_name
+# )
+#
+# if not path.endswith('.txt'):
+#     print('Ошибка: не верное расширение файла')
+# elif not path.startswith('C:/'):
+#     print('Ошибка: неверно указан диск')
+# else:
+#     print(f'Путь к файлу: {path}')
+
+# print('Задача 3. Удаление части')
+# На вход в программу подаётся строка, состоящая из прописных и заглавных букв кириллицы. Напишите код, который проверяет, каких букв в строке больше, прописных или заглавных. Если заглавных букв больше, то сделать все буквы строки заглавными, иначе сделать все прописными.
+# Подсказка: используйте методы islower() и/или isupper().
+
+# input_text = input('Введите строку: ')
+# if input_text.islower():
+#     print(input_text.upper())
+# else:
+#     print(input_text.lower())
+
+# text = input("Введите текст: ")
+# lowers = len([letter for letter in text if letter.islower()])
+# uppers = len([letter for letter in text if letter.isupper()])
+#
+# if lowers > uppers:
+#     print("Результат:", text.lower())
+# else:
+#     print("Результат:", text.upper())
+
+
+# details_num = 500000000
+# price = 23.34523466
+# increase = 0.045636
+#
+# print('На складе {:,d} деталей'.format(details_num))
+# print('Каждая деталь стоит {:.2f} рублей'.format(price))
+# print('Цена увеличилась на {:.1%}'.format(increase))
+# print('На складе {:.0e} деталей'.format(details_num))

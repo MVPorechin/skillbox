@@ -255,3 +255,12 @@
 # print('Каждая деталь стоит {:.2f} рублей'.format(price))
 # print('Цена увеличилась на {:.1%}'.format(increase))
 # print('На складе {:.0e} деталей'.format(details_num))
+
+# print('Задача 1. Меню ресторана')
+#
+# menu = input('Доступное меню: ').split(',')
+# menu_str = ', '.join(menu)
+# print(f'На данный момент в меню есть: {menu_str}')
+
+print('Задача 2. Самое длинное слово')
+

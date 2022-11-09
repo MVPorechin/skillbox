@@ -258,9 +258,11 @@
 
 # print('Задача 1. Меню ресторана')
 #
-# menu = input('Доступное меню: ').split(',')
-# menu_str = ', '.join(menu)
-# print(f'На данный момент в меню есть: {menu_str}')
+# menu = input('Доступное меню: ')
+# print('На данный момент в меню есть:', ", ".join(menu.split(",")))
 
 print('Задача 2. Самое длинное слово')
+
+input_str = input('Введите строку: ').split()
+print(input_str)
 

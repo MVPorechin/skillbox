@@ -256,13 +256,4 @@
 # print('Цена увеличилась на {:.1%}'.format(increase))
 # print('На складе {:.0e} деталей'.format(details_num))
 
-# print('Задача 1. Меню ресторана')
-#
-# menu = input('Доступное меню: ')
-# print('На данный момент в меню есть:', ", ".join(menu.split(",")))
-
-print('Задача 2. Самое длинное слово')
-
-input_str = input('Введите строку: ').split()
-print(input_str)
 

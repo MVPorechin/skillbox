@@ -194,22 +194,7 @@
 #     for index_key in index_value:
 #         print(index_key, index_value[index_key])
 #
-# players_dict = {
-#     1: {'name': 'Vanya', 'team': 'A', 'status': 'Rest'},
-#     2: {'name': 'Lena', 'team': 'B', 'status': 'Training'},
-#     3: {'name': 'Maxim', 'team': 'C', 'status': 'Travel'},
-#     4: {'name': 'Egor', 'team': 'C', 'status': 'Rest'},
-#     5: {'name': 'Andrei', 'team': 'A', 'status': 'Training'},
-#     6: {'name': 'Sasha', 'team': 'A', 'status': 'Rest'},
-#     7: {'name': 'Alina', 'team': 'B', 'status': 'Rest'},
-#     8: {'name': 'Masha', 'team': 'C', 'status': 'Travel'}
-# }
-# team_a_members = [
-#     player['name']
-#     for player in players_dict.values()
-#     if player['team'] == 'A' and player['status'] == 'Rest'
-# ]
-# print(team_a_members)
+
 
 # print('Задача 1. Член семьи')
 # Дана структура, которая содержит описание одного из членов семьи (имя, фамилия, хобби, сколько лет и дети):
@@ -246,3 +231,58 @@
 #     print(childrens_surname)
 # else:
 #     print("Nosurname")
+
+# print('Задача 2. Игроки')
+# Есть готовый словарь игроков, у каждого игрока есть имя, команда, в которой он играет, а также его текущий статус, в котором указано, отдыхает он, тренируется или путешествует:
+# Напишите программу, которая выводит на экран вот такие данные в разных строчках:
+#
+# Все члены команды из команды А, которые отдыхают.
+# Все члены команды из группы B, которые тренируются.
+# Все члены команды из команды C, которые путешествуют.
+
+# players_dict = {
+#     1: {'name': 'Vanya', 'team': 'A', 'status': 'Rest'},
+#     2: {'name': 'Lena', 'team': 'B', 'status': 'Training'},
+#     3: {'name': 'Maxim', 'team': 'C', 'status': 'Travel'},
+#     4: {'name': 'Egor', 'team': 'C', 'status': 'Rest'},
+#     5: {'name': 'Andrei', 'team': 'A', 'status': 'Training'},
+#     6: {'name': 'Sasha', 'team': 'A', 'status': 'Rest'},
+#     7: {'name': 'Alina', 'team': 'B', 'status': 'Rest'},
+#     8: {'name': 'Masha', 'team': 'C', 'status': 'Travel'}
+# }
+# team_a_members = [
+#     player['name']
+#     for player in players_dict.values()
+#     if player['team'] == 'A' and player['status'] == 'Rest'
+# ]
+# team_b_members = [
+#     player['name']
+#     for player in players_dict.values()
+#     if player['team'] == 'B' and player['status'] == 'Training'
+# ]
+#
+# team_c_members = [
+#     player['name']
+#     for player in players_dict.values()
+#     if player['team'] == 'C' and player['status'] == 'Travel'
+# ]
+#
+# print(team_a_members)
+# print(team_b_members)
+# print(team_c_members)
+
+# import random
+# numbers_list = [random.randint(1, 4) for index in range(10)]
+# qnique = set(numbers_list)
+# print(qnique)
+
+# print('Задача 1. Пунктуация')
+# Напишите программу, которая считает количество знаков пунктуации в символьной строке. К знакам пунктуации относятся символы из набора ".,;:!?". Набор должен храниться в виде множества.
+# user_input = input("Введите строку: ")
+# user_input = 'Я! Есть. Грут?! Я, Грут и Есть.'
+# symbols = set(".,;:!?")
+# count = 0
+# for elem in user_input:
+#     if elem in symbols:
+#         count += 1
+# print("Количество знаков пунктуации:", count)

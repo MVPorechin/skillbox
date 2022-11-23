@@ -313,3 +313,26 @@ import random
 # text_set = set(text)
 # result = text_set & set("0123456789")
 # print(''.join(result))
+
+data = [
+    {'id': 10, 'user': 'Bob'},
+    {'id': 11, 'user': 'Misha'},
+    {'id': 12, 'user': 'Anton'},
+    {'id': 10, 'user': 'Bob'},
+    {'id': 11, 'user': 'Misha'},
+
+]
+unique_data = []
+for index_dict in data:
+    data_exists = False
+    for unique_dict in unique_data:
+        if unique_dict['id'] == index_dict['id']:
+            data_exists = True
+            break
+    if not data_exists:
+        unique_data.append(index_dict)
+
+print(unique_data, '\n')
+
+unique_data_dict = {index_dict['id']: index_dict for index_dict in data}
+print(unique_data_dict.values())

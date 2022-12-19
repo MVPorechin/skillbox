@@ -5,9 +5,9 @@ import math
 # Заполните, один кортеж десятью случайными целыми числами от 0 до 5 включительно.
 # Также заполните второй кортеж числами от −5 до 0. Объедините два кортежа, создав тем самым третий кортеж. С помощью
 # метода кортежа определите в нём количество нулей. Выведите на экран третий кортеж и количество нулей в нём.
-first_tuple = tuple(random.randint(0, 5) for number in range(5))
-second_tuple = tuple(random.randint(-5, 0) for number in range(5))
-triple_tuple = tuple(set(first_tuple + second_tuple))
+first_tuple = tuple(random.randint(0, 5) for number in range(10))
+second_tuple = tuple(random.randint(-5, 0) for number in range(10))
+triple_tuple = tuple(list(first_tuple + second_tuple))
 print(f'Результат: {triple_tuple}, кол-во 0 в кортеже: {triple_tuple.count(0)}')
 
 # Задача 2. Цилиндр
@@ -23,9 +23,10 @@ def f_cylinder(radius, heigth):
     full = side + 2 * (2 * math.pi * radius)
     return side, full
 
-radius = int(input('Введите радиус: '))
-heigth = int(input('Введите высоту: '))
-print(f_cylinder(radius, heigth))
+
+# radius = int(input('Введите радиус: '))
+# heigth = int(input('Введите высоту: '))
+print(f_cylinder(2, 1))
 
 # Задача 3.  Неправильный код
 # Дан код, в котором должно происходить следующее: изначально есть кортеж из пяти чисел.
@@ -37,15 +38,17 @@ print(f_cylinder(radius, heigth))
 
 
 def change(nums):
-    index = random.randint(0, 5)
+    index = random.randint(0, 5) % len(nums)
     value = random.randint(100, 1000)
+    nums = list(nums)
     nums[index] = value
-    return nums, value
+
+    return tuple(nums), value
 
 
-my_nums = 1, 2, 3, 4, 5
+my_nums = (1, 2, 3, 4, 5)
 new_nums, rand_val = change(my_nums)
 print(new_nums, rand_val)
-new_nums = change(new_nums)
-rand_val += change(new_nums)
-print(new_nums, rand_val)
+new_nums_second, rand_val_second = change(new_nums)
+rand_val += rand_val_second
+print(new_nums_second, rand_val)

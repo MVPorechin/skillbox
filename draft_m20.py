@@ -1,5 +1,6 @@
 import random
 import math
+import string
 # tuple
 # Задача 1. Создание кортежей
 # Заполните, один кортеж десятью случайными целыми числами от 0 до 5 включительно.
@@ -58,3 +59,40 @@ print(new_nums_second, rand_val)
 # Пользователь вводит строку. Напишите программу, которая проходит по строке и выводит в консоль индексы символа ~.
 # Для решения этой задачи (и остальных тоже) используйте функцию enumerate.
 
+
+def sabotage(string):
+    result = [index for index, value in enumerate(string) if value == '~']
+
+    return tuple(result)
+
+
+# text = input('Строка: ')
+
+print(sabotage('so~mec~od~e'))
+
+# Задача 2. Словари из списков
+# Создайте два списка, в каждом из которых лежит 10 случайных букв алфавита (могут
+# повторяться). Затем для каждого списка создайте словарь из пар «индекс — значение» и выведите оба словаря на экран.
+first_list = [random.choice(string.ascii_letters) for letter in range(10)]
+second_list = [random.choice(string.ascii_letters) for letter in range(10)]
+first_dict = {index: value for index, value in enumerate(first_list)}
+second_dict = {index: value for index, value in enumerate(second_list)}
+print(f'Первый словарь: {first_dict}\nВторой словарь: {second_dict}')
+
+# Задача 3. Универсальная программа Один заказчик попросил нас написать небольшой скрипт для своих криптографических
+# нужд. При этом он заранее предупредил, что скрипт должен уметь работать с любым итерируемым типом данных.
+# Напишите функцию, которая возвращает список из элементов итерируемого объекта (кортежа, строки, списка, словаря),
+# у которых индекс чётный
+
+
+def even_value(string):
+    list_text = list(string)
+    result_list = [value for index, value in enumerate(list_text) if index % 2 == 0]
+
+    return result_list
+
+# text = input('Допустим, есть такая строка: ')
+
+# print(even_value(text))
+# print(even_value('О Дивный Новый мир!'))
+print(even_value([100, 200, 300, 'буква', 0, 2, 'а']))

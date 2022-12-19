@@ -42,7 +42,6 @@ def change(nums):
     value = random.randint(100, 1000)
     nums = list(nums)
     nums[index] = value
-
     return tuple(nums), value
 
 
@@ -52,3 +51,4 @@ print(new_nums, rand_val)
 new_nums_second, rand_val_second = change(new_nums)
 rand_val += rand_val_second
 print(new_nums_second, rand_val)
+

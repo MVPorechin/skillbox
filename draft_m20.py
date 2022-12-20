@@ -110,6 +110,7 @@ def search_in_dict(string):
             return print(f'По запросу: {tuple_string}\nНайдено: {value}')
 
 
+
 data = {
     (5000, 123456): ('Иванов', 'Василий'),
     (6000, 111111): ('Иванов', 'Петр'),

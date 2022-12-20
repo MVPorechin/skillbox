@@ -109,7 +109,8 @@ def search_in_dict(string):
     for key, value in data.items():
         if key == tuple_string:
             return print(f'По запросу: {tuple_string}\nНайдено: {value}')
-
+        else:
+            return print(f'По запросу: {tuple_string}\nНичего не найдено')
 
 data = {
     (5000, 123456): ('Иванов', 'Василий'),
@@ -129,14 +130,24 @@ print(search_in_dict(search_value))
 # на добавление идёт бесконечно (но можно задать своё условие для завершения программы). Обеспечьте контроль ввода:
 # если этот человек уже есть в словаре, то выведите соответствующее сообщение.
 
-contacts = {}
+# phonebook = {}
+# while True:
+#     text = input('Введите фамилию и имя через пробел:').split()
+#     name_surname = tuple(text)
+#     if name_surname not in phonebook:
+#         phonebook[name_surname] = int(input('Введите номер телефона: '))
+#     else:
+#         print(f'Контакт {name_surname} уже есть')
+#     print(f'{phonebook}')
 
-while True:
-    name = input("Введите имя: ")
-    surname = input("Введите фамилию: ")
-    name_n_surname = (name, surname)
-    if name_n_surname not in contacts:
-        contacts[name_n_surname] = int(input("Введите номер телефона: "))
-    else:
-        print("Такой контакт уже есть!")
-    print(contacts)
+#zip
+
+names = ['Tom', 'Bob', 'Albert']
+ages = [20, 45, 70]
+# people = list(zip(names, ages))
+people = dict(zip(names, ages))
+print(people)
+# for index in people:
+#     print(index)
+people_2 = {index: age + 10 for index, age in zip(names, ages)}
+print(people_2)

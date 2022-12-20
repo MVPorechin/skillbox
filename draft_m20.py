@@ -104,11 +104,11 @@ print(even_value([100, 200, 300, 'буква', 0, 2, 'а']))
 
 
 def search_in_dict(string):
-    tuple_string = tuple(string)
+    string_list = [int(index) for index in string.split()]
+    tuple_string = tuple(string_list)
     for key, value in data.items():
         if key == tuple_string:
             return print(f'По запросу: {tuple_string}\nНайдено: {value}')
-
 
 
 data = {
@@ -119,8 +119,7 @@ data = {
     (9000, 444444): ('Георгиева', 'Мария')
 }
 
-search_value = input('Введите серию и номер через пробел: ').split()
-# search_value = '5000 123456'.split()
+search_value = input('Введите серию и номер через пробел: ')
 print(search_in_dict(search_value))
 
 # Задача 2. Контакты 2 Мы уже реализовывали телефонную книгу для Степана, однако её проблема была в том,

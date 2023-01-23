@@ -42,10 +42,10 @@ def find_key(struct, key):
             result = find_key(sub_struct, key)
             if result:
                 break
-        else:
-            result = None
+    else:
+        result = None
 
-        return result
+    return result
 
 
 user_key = input('Какой ключ ищем?: ')

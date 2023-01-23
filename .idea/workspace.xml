@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="draft m20_v0.02">
-      <change beforePath="$PROJECT_DIR$/draft_m20.py" beforeDir="false" afterPath="$PROJECT_DIR$/draft_m20.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,10 +172,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.draft_m20" />
       <item itemvalue="Python.draft_m17" />
       <item itemvalue="Python.draft_m18" />
       <item itemvalue="Python.draft_m19" />
+      <item itemvalue="Python.draft_m20" />
       <item itemvalue="Python.scratch_2" />
     </list>
     <recent_temporary>

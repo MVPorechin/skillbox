@@ -91,35 +91,90 @@
 # расчёта степени числа без использования циклов, ** и функции math.pow(): Другие пользователи отметили,
 # что это решение нерабочее и в нём есть ошибки. Исправьте это решение, не используя циклы, возведение в степень
 # через ** и функцию math.pow()
-
-def power(a, n):
-    return a * power(a, n)
-
-
-float_num = float(input('Введите вещественное число: '))
-int_num = int(input('Введите степень числа: '))
-print(float_num, '**', int_num, '=', power(float_num, int_num))
-
 # Правильный результат:
 # Введите вещественное число: 1.5
 # Введите степень числа: 5
 # 1.5 ** 5 = 7.59375
 
 
+# def power(a, n):
+#     if n == 1:
+#         return a
+#     else:
+#         return a * power(a, n - 1)
+#
+#
+# float_num = float(input('Введите вещественное число: '))
+# int_num = int(input('Введите степень числа: '))
+#
+# print(f'{float_num} ** {int_num} = {power(float_num, int_num)}')
+
+
 # Задача 3. Поиск элемента Когда мы работаем с большой многоуровневой структурой, нам нередко необходимо пройтись по
 # ней и найти нужный элемент. Для этого в программировании используются специальные алгоритмы поиска.
 # Напишите функцию, которая находит заданный пользователем ключ в словаре и выдаёт значение этого ключа на экран. В
 # качестве примера можно использовать такой словарь:
-
+# def search_element(data, tag):
+#     result = None
+#     if tag in data:
+#         return data[tag]
+#     for key, value in data.items():
+#         if isinstance(value, dict):
+#             result = search_element(value, tag)
+#             if result:
+#                 return result
+#     return result
+#
+#
 # site = {
 #     'html': {
 #         'head': {
-#             'title': 'Мой сайт'
+#             'title': 'Мой сайт "TITLE"'
 #         },
 #         'body': {
-#             'h2': 'Здесь будет мой заголовок',
-#             'div': 'Тут, наверное, какой то блок',
-#             'p': 'А вот тут новый абзац'
+#             'h2': 'Здесь будет мой заголовок "H2"',
+#             'div': 'Тут, наверное, какой то блок "DIV"',
+#             'p': 'А вот тут новый абзац "P"'
 #         }
 #     }
 # }
+#
+#
+# search_key = input('Введите искомое значение: ')
+# return_value = search_element(site, search_key)
+# if return_value:
+#     print(f'Найдено значение: {return_value}')
+# else:
+#     print(f'Значение подходящих с {search_key} не найдено.')
+# def foo(x):
+#     if x == 0:
+#         print("Вызов foo(0) возвращает 0")
+#         return 0
+#     else:
+#         print(f"Вызов foo({x - 1}) начинается и добавляется в стек")
+#         new_result = foo(x - 1)
+#         print(f"Вызов foo({x - 1}) завершился и удаляется из стека")
+#         result = x + new_result
+#         return result
+#
+#
+# print(f"Вызов foo(2) начинается и добавляется в стек")
+# result = foo(2)
+# print(f"Вызов foo(2) завершается и удаляется из стека")
+# print("Итоговый ответ — ", result)
+
+
+def sum_test(x, y):
+    return x + y
+
+
+def test_return(a, b, c):
+    new_summ = sum_test(a, b)
+    # — вызывая эту функцию, мы хотим получить промежуточный результат; мы не хотим, чтобы наша функция завершилась;
+    result = new_summ + c
+    # получив результат вложенной функции, мы его изменяем
+    # и возвращаем
+    return result
+
+
+value = test_return(1, 2, 3)

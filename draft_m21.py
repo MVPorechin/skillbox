@@ -253,38 +253,60 @@ import copy
 # check_value(input_data)
 
 
-# Ввод объекта осуществляется не через инпут (решение с инпутом можно реализовать, но для этого придётся прописывать множество проверок
-# введенной строки, чтобы можно было преобразовать её потом в нужный тип данных)
+# Ввод объекта осуществляется не через инпут (решение с инпутом можно реализовать, но для этого придётся прописывать
+# множество проверок введенной строки, чтобы можно было преобразовать её потом в нужный тип данных)
 
 # Добавим вспомогательные словари для работы (в них можно будет по необходимости добавлять типы, которых сейчас нет)
-data_names_dict = {
-    "<class 'str'>": "строка",
-    "<class 'dict'>": "словарь",
-    "<class 'list'>": "список",
-    "<class 'set'>": "множество"
-}
+# data_names_dict = {
+#     "<class 'str'>": "строка",
+#     "<class 'dict'>": "словарь",
+#     "<class 'list'>": "список",
+#     "<class 'set'>": "множество"
+# }
+#
+# mutable_check_helper = {
+#     "mutable": ("словарь", "список", "множество")
+# }
+#
+# def check_info(data):
+#     type_of_data = type(data)
+#     name_of_data = ""
+#     if str(type_of_data) in data_names_dict:
+#         name_of_data = data_names_dict[str(type_of_data)]
+#
+#     if name_of_data in mutable_check_helper["mutable"]:
+#         property_of_data = "Изменяемый (mutable)"
+#     else:
+#         property_of_data = "Неизменяемый (immutable)"
+#
+#     print(f"Тип данных: {type_of_data} ({name_of_data})")
+#     print(property_of_data)
+#     print("Id объекта:", id(data))
+#
+#
+# data_in = "привет"
+# check_info(data_in)
+# check_class = ['123', 123]
+# print(type(check_class), isinstance(check_class, list))
 
-mutable_check_helper = {
-    "mutable": ("словарь", "список", "множество")
-}
+
+def ask_user(question,
+             complaint='Неверный ввод. Пожалуйста, введите да или нет',
+             retries=4):
+    while True:
+        answer = input(question).lower()
+        if answer == 'да':
+            return 1
+        if answer == 'нет':
+            return 0
+        retries -= 1
+        if retries == 0:
+            print('Количество попыток истекло.')
+            break
+        print(complaint)
+        print(f'Осталось попыток: {retries}')
 
 
-def check_info(data):
-    type_of_data = type(data)
-    name_of_data = ""
-    if str(type_of_data) in data_names_dict:
-        name_of_data = data_names_dict[str(type_of_data)]
-
-    if name_of_data in mutable_check_helper["mutable"]:
-        property_of_data = "Изменяемый (mutable)"
-    else:
-        property_of_data = "Неизменяемый (immutable)"
-
-    print(f"Тип данных: {type_of_data} ({name_of_data})")
-    print(property_of_data)
-    print("Id объекта:", id(data))
-
-
-data_in = "привет"
-check_info(data_in)
-
+ask_user('Вы действительно хотите выйти? ')
+ask_user('Удалить файл?', 'Так удалить или нет?')
+ask_user('Записать файл? ', retries=2)

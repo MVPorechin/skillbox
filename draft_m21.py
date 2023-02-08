@@ -377,20 +377,20 @@ import copy
 def create_dict(data, template=dict()):
     if isinstance(data, dict):
         return data
-
-    if isinstance(data, int) \
-            or isinstance(data, float) \
-            or isinstance(data, str):
+    elif isinstance(data, (int, str, float)):
+        template = template or dict()
         template[data] = data
         return template
+    else:
+        return None
 
 
 def data_preparation(old_list):
     new_list = []
-
     for i_element in old_list:
-        new_list.append(create_dict(i_element))
-
+        new_elem = create_dict(i_element)
+        if new_elem:
+            new_list.append(new_elem)
     return new_list
 
 

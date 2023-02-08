@@ -374,26 +374,40 @@ import copy
 # Друг написал программу, но в ней ошибка, так как она что-то не то выводит:( Нужна ваша помощь, вот сама программа:
 
 
-def create_dict(data, template=dict()):
-    if isinstance(data, dict):
-        return data
-    elif isinstance(data, (int, str, float)):
-        template = template or dict()
-        template[data] = data
-        return template
-    else:
-        return None
+# def create_dict(data, template=dict()):
+#     if isinstance(data, dict):
+#         return data
+#     elif isinstance(data, (int, str, float)):
+#         template = template or dict()
+#         template[data] = data
+#         return template
+#     else:
+#         return None
+#
+#
+# def data_preparation(old_list):
+#     new_list = []
+#     for i_element in old_list:
+#         new_elem = create_dict(i_element)
+#         if new_elem:
+#             new_list.append(new_elem)
+#     return new_list
+#
+#
+# data = ['sad', {'sds': 23}, {43}, [12, 42, 1], 2323]
+# data = data_preparation(data)
+# print(data)
 
 
-def data_preparation(old_list):
-    new_list = []
-    for i_element in old_list:
-        new_elem = create_dict(i_element)
-        if new_elem:
-            new_list.append(new_elem)
-    return new_list
+def print_tax_document(tax, *args, **kwargs):
+    price_summ = 0
+    price_summ = [price_summ + i_price * tax / 100 for i_price in args]
+    print(f'Сумма цен с учетом налога: {sum(price_summ)}')
+
+    for i_info, i_value in kwargs.items():
+        print('{}: {}'.format(i_info, i_value))
 
 
-data = ['sad', {'sds': 23}, {43}, [12, 42, 1], 2323]
-data = data_preparation(data)
-print(data)
+my_tax = int(input('Величина налога: '))
+print_tax_document(my_tax, 1000, 950, 880, 920, 990,
+                   year=1997, doc_type='report', operation_id=1110034)

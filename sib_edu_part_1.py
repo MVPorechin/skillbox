@@ -307,16 +307,50 @@ my_num_list_copy = my_num_list.copy()
 # list_people.sort(key=inverse_height)
 # print(*list_people)
 
-def IsAscending(lst):
-    i = 1
-    while i < len(lst) and lst[i] > lst[i - 1]:
-        i += 1
-    if i == len(lst):
-        return "YES"
-    else:
-        return "NO"
+# def IsAscending(lst):
+#     i = 1
+#     while i < len(lst) and lst[i] > lst[i - 1]:
+#         i += 1
+#     if i == len(lst):
+#         return "YES"
+#     else:
+#         return "NO"
+#
+#
+# my_num_list_merge = list(map(int, input('Введите числа: ').split()))
+# print(IsAscending(my_num_list_merge))
 
 
-my_num_list_merge = list(map(int, input('Введите числа: ').split()))
-print(IsAscending(my_num_list_merge))
+class Complex:
+    def __int__(self, re=0, im=0):
+        self.re = re
+        self.im = im
+
+    def __str__(self):
+        strRep = str(self.re)
+        if self.im >= 0:
+            strRep += '+'
+        strRep += str(self.im) + 'i'
+        return strRep
+
+    def __add__(self, other):
+        newRe = self.re + other.re
+        newIm = self.im + other.im
+        return Complex(newRe, newIm)
+
+
+class Point(Complex):
+    def length(self):
+        return (self.re ** 2 + self.im ** 2) ** (1 / 2)
+
+    def __str__(self):
+        return str((self.re, self.im))
+
+
+a = Point(1, 2)
+b = Complex(3)
+print(a.length())
+c = Complex()
+print(a + b)
+
 

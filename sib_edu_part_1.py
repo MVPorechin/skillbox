@@ -28,7 +28,7 @@ import math
 # string_a = 10
 # int_b = 20
 # print(f'{str(string_a)} + {str(int_b)} = {str(string_a + int_b)}')
-var_one = 'hello world!'.title()
+# var_one = 'hello world!'.title()
 # print(f'{var_one * 3}')
 # print(len(var_one))
 # print(var_one[::2])
@@ -347,7 +347,7 @@ class Point(Complex):
         return str((self.re, self.im))
 
 
-a = Point(1, 2)
+a = Complex(1, 2)
 b = Complex(3)
 print(a.length())
 c = Complex()

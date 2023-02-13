@@ -172,7 +172,7 @@ number = int(input('Введите число: '))
 for index in range(tries[number % 4], 5):
     squares = (find_squares(number, index))
     if squares:
-        print(f'Результат: {squares}')
+        print(f'Квадрат(ы): {squares} дают в сумме число: {number}')
         break
 
 # def lagrange(n, level):

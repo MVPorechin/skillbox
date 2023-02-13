@@ -1,4 +1,5 @@
 import math
+
 # start = 'hello world'.capitalize()
 # print(f'{start}')
 # print(7 + 3)
@@ -74,7 +75,7 @@ var_one = 'hello world!'.title()
 # print(round(-float_number, 3))
 # print(math.floor(float_number))
 
-#while
+# while
 # number_input = int(input('Введите число: '))
 # min_number = number_input
 # count = 1
@@ -151,18 +152,18 @@ var_one = 'hello world!'.title()
 # for flavor in flavor_list:
 #     print( '%s имеет чудесный вкус ' %flavor)
 
-
-def find_squares(n, squares_amount):
+import math
+def find_squares(num, squares_amount):
     if squares_amount == 1:
-        if math.sqrt(n) == int(math.sqrt(n)):
-            return [int(math.sqrt(n))]
+        if math.sqrt(num) == int(math.sqrt(num)):
+            return [int(math.sqrt(num))]
         return False
-    a = 1
-    while a * a < n:
-        x = find_squares(n - a * a, squares_amount - 1)
-        if x:
-            return [a] + x
-        a += 1
+    temporary = 1
+    while temporary * temporary < num:
+        result = find_squares(num - temporary * temporary, squares_amount - 1)
+        if result:
+            return [temporary] + result
+        temporary += 1
     return False
 
 
@@ -171,8 +172,24 @@ number = int(input('Введите число: '))
 for index in range(tries[number % 4], 5):
     squares = (find_squares(number, index))
     if squares:
-        print(*squares)
+        print(f'Результат: {squares}')
         break
+
+# def lagrange(n, level):
+#     if level == 0:
+#         return 0
+#     sqrtn = int(n ** 0.5)
+#     if sqrtn * sqrtn == n:
+#         return str(sqrtn)
+#     while sqrtn > 0:
+#         if lagrange(n - sqrtn * sqrtn, level - 1) != 0:
+#             return str(sqrtn) + " " + lagrange(n - sqrtn * sqrtn, level - 1)
+#         sqrtn -= 1
+#     return 0
+#
+#
+# n = int(input('Введите число: '))
+# print(lagrange(n, 4))
 
 
 # list_1 = [1, 2, 3, 4]

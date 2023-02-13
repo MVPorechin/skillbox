@@ -152,28 +152,28 @@ var_one = 'hello world!'.title()
 # for flavor in flavor_list:
 #     print( '%s имеет чудесный вкус ' %flavor)
 
-import math
-def find_squares(num, squares_amount):
-    if squares_amount == 1:
-        if math.sqrt(num) == int(math.sqrt(num)):
-            return [int(math.sqrt(num))]
-        return False
-    temporary = 1
-    while temporary * temporary < num:
-        result = find_squares(num - temporary * temporary, squares_amount - 1)
-        if result:
-            return [temporary] + result
-        temporary += 1
-    return False
-
-
-tries = {0: 1, 1: 1, 2: 2, 3: 3}
-number = int(input('Введите число: '))
-for index in range(tries[number % 4], 5):
-    squares = (find_squares(number, index))
-    if squares:
-        print(f'Квадрат(ы): {squares} дают в сумме число: {number}')
-        break
+# import math
+# def find_squares(num, squares_amount):
+#     if squares_amount == 1:
+#         if math.sqrt(num) == int(math.sqrt(num)):
+#             return [int(math.sqrt(num))]
+#         return False
+#     temporary = 1
+#     while temporary * temporary < num:
+#         result = find_squares(num - temporary * temporary, squares_amount - 1)
+#         if result:
+#             return [temporary] + result
+#         temporary += 1
+#     return False
+#
+#
+# tries = {0: 1, 1: 1, 2: 2, 3: 3}
+# number = int(input('Введите число: '))
+# for index in range(tries[number % 4], 5):
+#     squares = (find_squares(number, index))
+#     if squares:
+#         print(f'Квадрат(ы): {squares} дают в сумме число: {number}')
+#         break
 
 # def lagrange(n, level):
 #     if level == 0:
@@ -200,3 +200,123 @@ for index in range(tries[number % 4], 5):
 # x = dist.copy()
 # x[1] = 5
 # print(x, dist)
+
+# person_2 = ('Ivan', 'Ivanov', 27)
+# tuple_1 = (1, 2)
+# tuple_2 = (3, 4)
+# print({tuple_1 + tuple_2})
+# tuple_str = ('Hello!')
+# name, surname, age = person_2
+#
+# name_user = 'Maxim'
+# surname_user = 'Porechin'
+# age_user = 33
+# tuple_user = (name_user, surname_user, age_user)
+#
+# my_iterable_range = range(10, -10, -1)
+# print(list(my_iterable_range))
+#
+# apple = (color for color in ('red', 'green', 'yellow'))
+# print(apple)
+
+# for index in range(1, 11):
+#     for j_index in range(1, 11):
+#         print(index * j_index, end='\t')
+#     print('')
+
+# n = int(input('Введите число: '))
+# for i in range(n):
+#     print("+___", end=" ")
+# print()
+# for i in range(n):
+#     print("|%s /" % (i + 1), end=" ")
+# print()
+# for i in range(n):
+#     print("|__\\", end=" ")
+# print()
+# for i in range(n):
+#     print("|   ", end=" ")
+# print()
+
+# var_int_one = 2337
+# var_int_two = var_int_one
+# var_int_one = 2338
+#
+# my_list_one = [2337]
+# my_list_two = my_list_one
+# my_list_one[0] = 2338
+#
+# my_list = list('hello!')
+# print(f'{my_list}')
+# print(f'{len(my_list)}')
+#
+#
+# def replace_first_elem(lst, var_chng='C'):
+#     lst[0] = var_chng
+#     return lst
+#
+#
+# temp_list = list('abcde')
+# change_symbol = 'h'
+# print(replace_first_elem(temp_list, change_symbol))
+# print('*'.join(replace_first_elem(temp_list, change_symbol)))
+#
+# input_str = input('Введите ФИО: ').title().split()
+my_FIO_list = ['Porechin', 'maxim', 'valentinovich']
+my_num_list = [1, 1, 22, 3, 3, 5, 6, 7, 7, 0, 0, 2]
+my_new_num_list = [-1, -2, -3]
+# surname, name, otch = my_FIO_list
+# print(input_str)
+
+# my_score_list = list(map(int, input('Введите список: ').split()))
+# print(f'{my_score_list}')
+#
+# my_score_list_str = list(map(str, input('Введите список: ').split()))
+# print(''.join(map(str, my_score_list_str)))
+
+# print(my_num_list.count(3))
+# my_num_list.append(23)
+# print(my_num_list)
+my_num_list.extend(my_new_num_list)
+# my_num_list.remove(7)
+# print(my_num_list)
+#
+my_num_list_copy = my_num_list.copy()
+# my_num_list_copy[2] = 9999
+# print(my_num_list, my_num_list_copy)
+# my_num_list_copy.insert(8, 6666)
+# print(my_num_list_copy)
+# my_num_list_copy.pop()
+# print(my_num_list_copy)
+# my_num_list_copy.pop(3)
+# print(my_num_list_copy)
+# my_num_list_copy.sort(reverse=True)
+# print(my_num_list_copy)
+# sorted_list = sorted(my_num_list_copy, reverse=True)
+# print(sorted_list)
+
+# list_people = [(178, 'Petya'),
+#               (156, 'Ivan'),
+#               (189, 'Maxim'),
+#               (-78, 'Zakhar')
+#               ]
+#
+# def inverse_height(lst):
+#     return (-lst[0], lst[1])
+#
+# list_people.sort(key=inverse_height)
+# print(*list_people)
+
+def IsAscending(lst):
+    i = 1
+    while i < len(lst) and lst[i] > lst[i - 1]:
+        i += 1
+    if i == len(lst):
+        return "YES"
+    else:
+        return "NO"
+
+
+my_num_list_merge = list(map(int, input('Введите числа: ').split()))
+print(IsAscending(my_num_list_merge))
+

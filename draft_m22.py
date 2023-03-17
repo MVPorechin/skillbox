@@ -11,9 +11,9 @@ path = 'docs/{folder}/{file}'.format(
 # print(path)
 
 real_path = os.path.join('docs', folder_name, file_name)
-# print(real_path)
+print(real_path)
 abs_path = os.path.abspath(file_name)
-# print(abs_path)
+print(abs_path)
 os.path.abspath('new_folder')
 os.path.abspath(os.path.join('..', 'new_folder'))
 os.path.abspath(os.path.join('/new_folder'))
@@ -27,7 +27,8 @@ def print_dirs(project):
         print(f'       {path}')
 
 
-projects_list = ['Skillbox', 'My_pet_project']
+projects_list = ['pet_project', 'aqua_disco_project']
+
 for i_project in projects_list:
-    path_to_project = os.path.abspath(os.path.join('..', '..', i_project))
+    path_to_project = os.path.abspath(os.path.join(i_project))
     print_dirs(path_to_project)

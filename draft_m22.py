@@ -79,30 +79,30 @@ import os
 #     path_to_project = os.path.abspath(os.path.join(i_project))
 #     print_dirs(path_to_project)
 
-def find_file(cur_path, file_name):
-    print(f'переходим: {cur_path}')
-
-    for i_elem in os.listdir(cur_path):
-        path = os.path.join(cur_path, i_elem)
-        print(f'\t\tсмотрим {path}')
-        if file_name == i_elem:
-            return path
-        if os.path.isdir(path):
-            print(f'{path} это директория')
-            result = find_file(path, file_name)
-            if result:
-                break
-    else:
-        result = None
-
-    return result
-
-
-file_path = find_file(os.path.abspath(os.path.join('..', '..', 'backup')), 'config.sh')
-if file_path:
-    print(f'Абсолютный путь к файлу: {file_path}')
-else:
-    print('Файл не найден')
+# def find_file(cur_path, file_name):
+#     print(f'переходим: {cur_path}')
+#
+#     for i_elem in os.listdir(cur_path):
+#         path = os.path.join(cur_path, i_elem)
+#         print(f'\t\tсмотрим {path}')
+#         if file_name == i_elem:
+#             return path
+#         if os.path.isdir(path):
+#             print(f'{path} это директория')
+#             result = find_file(path, file_name)
+#             if result:
+#                 break
+#     else:
+#         result = None
+#
+#     return result
+#
+#
+# file_path = find_file(os.path.abspath(os.path.join('..', '..', 'backup')), 'config.sh')
+# if file_path:
+#     print(f'Абсолютный путь к файлу: {file_path}')
+# else:
+#     print('Файл не найден')
 
 
 # Задача 1. Иконки

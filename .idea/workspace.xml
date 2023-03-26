@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="draft m22 os module">
-      <change afterPath="$PROJECT_DIR$/pet_project/m22/list_members.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet_project/m22/task/Additional_info/group_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet_project/m22/task/group_1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draft_m22.py" beforeDir="false" afterPath="$PROJECT_DIR$/pet_project/m22/draft_m22.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,19 +47,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/games/Witch_Hunter/DEV/WitchHunter-0.18.0.0-pc/renpy/common",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/games/Witch_Hunter/DEV/WitchHunter-0.18.0.0-pc/renpy/common&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Python"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Python&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\games\Witch_Hunter\DEV\WitchHunter-0.18.0.0-pc\renpy\common" />
@@ -181,9 +177,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.draft_m22 (1)" />
       <item itemvalue="Python.draft_m20" />
       <item itemvalue="Python.draft_m21" />
+      <item itemvalue="Python.draft_m22 (1)" />
       <item itemvalue="Python.draft_m22" />
       <item itemvalue="Python.scratch_5" />
     </list>
@@ -205,13 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;draft_m15.py">
-      <created>1664659022857</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1664659022857</updated>
     </task>
     <task id="LOCAL-00005" summary="edit draft_m15.py">
       <created>1664692732234</created>
@@ -549,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679340410049</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="draft m22 os module">
+      <created>1679863141144</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1679863141144</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

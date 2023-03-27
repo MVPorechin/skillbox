@@ -220,26 +220,82 @@ import random
 # искомым названием и выводит на экран текст одного из них (выбор можно сгенерировать случайно). Подсказка: можно
 # использовать, например, список для сохранения найденного пути.
 
-def find_file(cur_path, file_name):
-    all_paths = []
-    for i_elem in os.listdir(cur_path):
-        path = os.path.join(cur_path, i_elem)
-        if file_name == i_elem:
-            all_paths.append(os.path.abspath(path))
-        elif os.path.isdir(path):
-            result = find_file(path, file_name)
-            if result:
-                all_paths.extend(result)
+# def find_file(cur_path, file_name):
+#     all_paths = []
+#     for i_elem in os.listdir(cur_path):
+#         path = os.path.join(cur_path, i_elem)
+#         if file_name == i_elem:
+#             all_paths.append(os.path.abspath(path))
+#         elif os.path.isdir(path):
+#             result = find_file(path, file_name)
+#             if result:
+#                 all_paths.extend(result)
+#
+#     return all_paths
+#
+#
+# def check_file_inside(path_to_file):
+#     file = open(path_to_file, 'r', encoding='utf8')
+#     for line in file:
+#         print(f'{line}\n')
+#     file.close()
+#
+#
+# all_paths = find_file('../pet_project', 'test01.txt')
+# check_file_inside(random.choice(all_paths))
 
-    return all_paths
+# speakers_file = open('speakers.txt', 'r', encoding='utf-8')
+# sym_count = []
+# for i_line in speakers_file:
+#     print(i_line, end='')
+#     sym_count.append(str(len(i_line)))
+# sym_count_str = '\n'.join(sym_count)
+# speakers_file.close()
+#
+# counts_file = open('sym_count.txt', 'w')
+# counts_file.write(sym_count_str)
+# counts_file.write(str(50))
+# counts_file.close()
 
 
-def check_file_inside(path_to_file):
-    file = open(path_to_file, 'r', encoding='utf8')
-    for line in file:
-        print(line)
-    file.close()
+# def find_file(cur_path, file_name):
+#     print(f'переходим: {cur_path}')
+#
+#     for i_elem in os.listdir(cur_path):
+#         path = os.path.join(cur_path, i_elem)
+#         print(f'\t\tсмотрим {path}')
+#         if file_name == i_elem:
+#             return path
+#         if os.path.isdir(path):
+#             print(f'{path} это директория')
+#             result = find_file(path, file_name)
+#             if result:
+#                 break
+#     else:
+#         result = None
+#
+#     return result
+#
+#
+# # file_path = find_file(os.path.abspath(os.path.join('../../..', '..', 'backup')), 'config.sh')
+# file_path = find_file(os.path.abspath(os.path.join('../../..', '..', 'documents')), 'squid.conf')
+# hystory_file = open('search_hystory.txt', 'a')
+#
+# if file_path:
+#     print(f'Абсолютный путь к файлу: {file_path}')
+#     hystory_file.write(f'{file_path} \n')
+# else:
+#     print('Файл не найден')
+# hystory_file.close()
 
-
-all_paths = find_file('..', '6.4.py')
-check_file_inside(random.choice(all_paths))
+# Задача 1. Сумма чисел
+# Во входном файле numbers.txt записано N целых чисел, каждое в отдельной строке. Напишите
+# программу, которая выводит их сумму в выходной файл answer.txt.
+numbers_file = open('numbers.txt','r')
+summary_file = open('anwswer.txt', 'a')
+summ = 0
+for value in numbers_file:
+    summ += int(value)
+summary_file.write(str(summ))
+numbers_file.close()
+summary_file.close()

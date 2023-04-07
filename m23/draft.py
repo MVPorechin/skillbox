@@ -50,3 +50,4 @@ if file_result and file_ages:
             count += 1
         except (ValueError, TypeError) as exc:
             print("Поймано исключение: ", exc, type(exc))
+

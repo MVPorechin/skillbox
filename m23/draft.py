@@ -37,6 +37,8 @@ try:
     # режим 'x' - это эксклюзивное создание, бросается исключение FileExistsError, если файл уже существует.
 except (FileExistsError, PermissionError) as exc:  # названия исключений можно группировать в кортежи
     print("Поймано исключение: ", exc, type(exc))
+except FileNotFoundError as exc:
+    print(f'Файл не найден {exc, type(exc)}')
 
 if file_result and file_ages:
     names = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
@@ -51,3 +53,7 @@ if file_result and file_ages:
         except (ValueError, TypeError) as exc:
             print("Поймано исключение: ", exc, type(exc))
 
+
+# Задача 1. Простая программа Напишите программу, которая открывает файл и записывает туда введённую пользователем
+# строку. Используйте операторы try except else finally. Обработайте возможные ошибки: Проблема при открытии файла.
+# Нельзя преобразовать данные в целое. Неожиданная ошибка.

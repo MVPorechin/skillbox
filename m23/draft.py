@@ -1,3 +1,34 @@
+def divide(number):
+    return 10 / number
+
+
+def sum_of_diveded(left, right):
+    div_sum = 0
+    for i_num in range(left, right + 1):
+        try:
+            div_sum += divide(i_num)
+            print(div_sum)
+        except ZeroDivisionError as exc:
+            print(f'{exc, type(exc)} - на ноль делить нельзя')
+    return div_sum
+
+
+total = 0
+try:
+    number_file = open('numbers.txt', 'r')
+    for i_line in number_file:
+        nums_list = i_line.split()
+        first_num = int(nums_list[0])
+        second_num = int(nums_list[1])
+
+        total += sum_of_diveded(first_num, second_num)
+    print(f'Общая сумма {total}')
+
+except ZeroDivisionError as exc:
+    print(f'{exc, type(exc)} - на ноль делить нельзя')
+except FileNotFoundError as exc:
+    print(f'{exc, type(exc)} - Такого файла или каталога нет')
+
 #Задача 1. Пятый элемент
 
 # В курсе по программированию студенту дали простую задачу: умножить константу (число 42) на пятый элемент строки,
@@ -9,14 +40,14 @@ input_data = input('Введите строку: ')
 try:
     leeloo = int(input_data[4])
     result = BRUCE_WILLIS * leeloo
-    print(f'- Leeloo Dallas! Multi-pass № {result}!')
+    print(f'Leeloo Dallas! Multi-pass № {result}!')
 except ValueError as exc:  # as - этот оператор запишет пойманное исключение в переменную exc (название может быть
     # любым)
-    print(type(exc), "— невозможно преобразовать к числу")
+    print(f'{exc, type(exc)} — невозможно преобразовать к числу')
 except IndexError as exc:
-    print(type(exc), "— выход за границы списка")
+    print(f'{exc, type(exc)} — выход за границы списка')
 except Exception as exc:
-    print(type(exc), "поймано исключение")
+    print(f'{exc, type(exc)} - "поймано исключение')
 
 
 #Задача 2. Возраст
@@ -36,9 +67,9 @@ try:
     file_result = open("result.txt", "x", encoding="utf8")
     # режим 'x' - это эксклюзивное создание, бросается исключение FileExistsError, если файл уже существует.
 except (FileExistsError, PermissionError) as exc:  # названия исключений можно группировать в кортежи
-    print("Поймано исключение: ", exc, type(exc))
+    print(f'{exc, type(exc)} - Поймано исключение ')
 except FileNotFoundError as exc:
-    print(f'Файл не найден {exc, type(exc)}')
+    print(f'{exc, type(exc)} - Файл не найден ')
 
 if file_result and file_ages:
     names = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
@@ -48,10 +79,10 @@ if file_result and file_ages:
             clear_line = line.rstrip()
             int(clear_line)  # на всякий случай пытаемся преобразить данные в int, но не сохраняем это в переменную, т.к. записывать нам
             # в файл придётся именно строку
-            file_result.write(names[count] + " - " + clear_line)
+            file_result.write(names[count] + ' - ' + clear_line + '\n')
             count += 1
         except (ValueError, TypeError) as exc:
-            print("Поймано исключение: ", exc, type(exc))
+            print(f'{exc, type(exc)} - Поймано исключение ')
 
 
 # Задача 1. Простая программа Напишите программу, которая открывает файл и записывает туда введённую пользователем

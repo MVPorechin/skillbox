@@ -1,6 +1,6 @@
 import os
 
-#
+
 # def divide(number):
 #     return 10 / number
 #
@@ -31,9 +31,19 @@ import os
 #     print(f'{exc, type(exc)} - на ноль делить нельзя')
 # except FileNotFoundError as exc:
 #     print(f'{exc, type(exc)} - Такого файла или каталога нет')
+#
+# answer_file = open('answer.txt', 'w')
+# try:
+#     answer_file.write(f'The answer is: {str(total)}')
+# except TypeError as exc:
+#     print(f'{type(exc), exc}')
+# else:
+#     print('Программа выполнилась без ошибок')
+# finally:
+#     answer_file.close()
+#     print(answer_file.closed)
 
-#Задача 1. Пятый элемент
-
+# Задача 1. Пятый элемент
 # В курсе по программированию студенту дали простую задачу: умножить константу (число 42) на пятый элемент строки,
 # введённой пользователем. Вот код студента:
 
@@ -92,22 +102,22 @@ import os
 # строку. Используйте операторы try except else finally. Обработайте возможные ошибки: Проблема при открытии файла.
 # Нельзя преобразовать данные в целое. Неожиданная ошибка.
 
-file = None
-try:
-    file = open("23.3.txt", "w", encoding="utf8")
-    number = int(input("Введите текст: "))
-    file.write(str(number))
-except (FileNotFoundError, PermissionError) as exc:
-    print(type(exc), exc)
-except ValueError as exc:
-    print(type(exc), exc)
-except Exception as exc:
-    print(type(exc), exc)
-else:
-    print("Запись прошла без ошибок")
-finally:
-    if file and not file.closed:
-        file.close()
+# file = None
+# try:
+#     file = open("23.3.txt", "w", encoding="utf8")
+#     number = int(input("Введите текст: "))
+#     file.write(str(number))
+# except (FileNotFoundError, PermissionError) as exc:
+#     print(type(exc), exc)
+# except ValueError as exc:
+#     print(type(exc), exc)
+# except Exception as exc:
+#     print(type(exc), exc)
+# else:
+#     print("Запись прошла без ошибок")
+# finally:
+#     if file and not file.closed:
+#         file.close()
 
 
 # Задача 2. Старая задача
@@ -119,25 +129,25 @@ finally:
 # когда стоит использовать обработку исключений и когда она будет излишней?
 
 
-def find_file(cur_path, file_name):
-    for i_elem in os.listdir(cur_path):
-        path = os.path.join(cur_path, i_elem)
-        if file_name == i_elem:
-            print(os.path.abspath(path))
-        elif os.path.isdir(path):
-            result = find_file(path, file_name)
-            if result:
-                break
-    else:
-        result = None
-
-    return result
-
-
-try:
-    find_file('c:\\', 'hel')
-except (TypeError, PermissionError) as exc:
-    print(exc, type(exc))
+# def find_file(cur_path, file_name):
+#     for i_elem in os.listdir(cur_path):
+#         path = os.path.join(cur_path, i_elem)
+#         if file_name == i_elem:
+#             print(os.path.abspath(path))
+#         elif os.path.isdir(path):
+#             result = find_file(path, file_name)
+#             if result:
+#                 break
+#     else:
+#         result = None
+#
+#     return result
+#
+#
+# try:
+#     find_file('c:\\', 'hel')
+# except (TypeError, PermissionError) as exc:
+#     print(exc, type(exc))
 
 # Хоть проверка исключений и является мощным инструментом, НО отдавать предпочтение нужно простым проверкам (избежать исключения лучше)
 # Если же мы не уверены в появлении ошибки (например у нас нет власти над источником ошибки - это может быть какой-то сторонний сервис)
@@ -145,3 +155,37 @@ except (TypeError, PermissionError) as exc:
 # НО даже в этом случае, старайтесь разделять исключения, которые вы выбрасываете специально и исключения которые могут появиться случайно.
 # Причина такой осторожности в том, что мы можем запутаться и поймать например исключение, о котором мы не догадывались. А если мы его
 # поймаем и не увидим - мы можем пропустить ошибку в нашем коде.
+
+# line_count = 0
+# sym_sum = 0
+# try:
+#     people_file = open('people.txt', 'r')
+#     for i_line in people_file:
+#         length = len(i_line)
+#         line_count += 1
+#         if i_line.endswith('\n'):
+#             length -= 1
+#         if length < 3:
+#             raise BaseException(f'Длинна {line_count} строки меньше трех символов')
+#         sym_sum += length
+#     people_file.close()
+#
+#
+# except FileNotFoundError as exc:
+#     print(f'{type(exc), exc} - Файл не найден')
+#
+# finally:
+#     print(f'Найденная сумма символов: {sym_sum}')
+
+names_list = []
+while True:
+    try:
+        name = input('Введите имя: ')
+        if not name.isalpha():
+            names_list.append(name)
+        if len(names_list) == 5:
+            print('Место закончилось')
+            break
+    except TypeError:
+        print(f'Ты чего ввел? {name}')
+

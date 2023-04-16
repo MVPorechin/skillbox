@@ -189,3 +189,8 @@ while True:
     except TypeError:
         print(f'Ты чего ввел? {name}')
 
+
+names_file = open('names.txt', 'w')
+names_file.write('\n'.join(names_list))
+names_file.close()
+print('программа закончена, запись завершена')

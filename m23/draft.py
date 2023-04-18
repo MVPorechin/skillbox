@@ -177,20 +177,81 @@ import os
 # finally:
 #     print(f'Найденная сумма символов: {sym_sum}')
 
-names_list = []
-while True:
-    try:
-        name = input('Введите имя: ')
-        if not name.isalpha():
-            names_list.append(name)
-        if len(names_list) == 5:
-            print('Место закончилось')
-            break
-    except TypeError:
-        print(f'Ты чего ввел? {name}')
+# names_list = []
+# while True:
+#     try:
+#         name = input('Введите имя: ')
+#         if name.lower() == 'error':
+#
+#             raise BaseException('Ты сломал программу!')
+#         if not name.isalpha():
+#             raise TypeError
+#         names_list.append(name)
+#         if len(names_list) == 5:
+#             print('Место закончилось')
+#             break
+#     except TypeError:
+#         print(f'Ты чего ввел? {name}')
+#     except BaseException:
+#         names_list = []
+#         print('введено стоп слово')
+#         raise ValueError('Пожалуйста не вводите стоп-слово')
+#
+#
+# names_file = open('names.txt', 'w')
+# names_file.write('\n'.join(names_list))
+# names_file.close()
+# print('программа закончена, запись завершена')
 
 
-names_file = open('names.txt', 'w')
-names_file.write('\n'.join(names_list))
-names_file.close()
-print('программа закончена, запись завершена')
+# Задача 1. Имена
+#
+# В базе данных одной компании есть баг (или, может быть, фича): если ввести туда имя сотрудника меньше чем из трёх букв,
+# то база сломается и упадёт. Как компания принимает на работу людей, например, с китайскими именами, непонятно.
+#
+# Дан файл people.txt, в котором построчно хранится N имён пользователей.
+#
+# Напишите программу, которая берёт количество символов в каждой строке файла и в качестве ответа выводит общую сумму.
+# Если в какой-либо строке меньше трёх символов (не считая литерала \n), то вызывается ошибка, и программа завершается.
+
+# Файл people.txt создать можно вручную или кодом.
+
+# peoples = open('people.txt', 'r', encoding='utf8')
+# result = 0
+# for line in peoples:
+#     clear_line_len = len(line.rstrip())
+#     result += clear_line_len
+#     if clear_line_len < 3:
+#         raise Exception('строке меньше трёх символов')
+#
+# print(result)
+
+# Задача 2. Логирование
+#
+# Возможно, вы замечали, что некоторые программы не просто выдают ошибку и закрываются, но и записывают эту ошибку в файл.
+# Таким образом проще сформировать отчёт об ошибках, а значит, программисту будет проще их исправить. Это называется логированием ошибок.
+#
+# Дан файл words.txt, в котором построчно записаны слова. Необходимо определить количество слов,
+# из которых можно получить палиндром (привет предыдущим модулям).
+# Если в строке встречается число, то программа выдаёт ошибку ValueError и записывает эту ошибку в файл errors.log
+
+
+def check_palindrome(word):
+    return word == word[::-1]
+
+
+# оператор with из 23.5
+with open('words.txt', 'r', encoding='utf8') as file, open('errors.log', 'w', encoding='utf8') as log_file:
+    count = 0
+
+    for line in file:
+        try:
+            clear_line = line.rstrip()
+            if clear_line.isalpha():
+                count += check_palindrome(clear_line)
+            else:
+                raise ValueError("строка не полностью состоит из букв!")
+        except ValueError as exc:
+            log_file.write(str(exc))
+
+    print(count)

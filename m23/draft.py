@@ -249,9 +249,10 @@ with open('words.txt', 'r', encoding='utf8') as file, open('errors.log', 'w', en
             clear_line = line.rstrip()
             if clear_line.isalpha():
                 count += check_palindrome(clear_line)
+                print(count, check_palindrome(clear_line))
             else:
                 raise ValueError("строка не полностью состоит из букв!")
         except ValueError as exc:
-            log_file.write(str(exc))
+            log_file.write(clear_line + ' ' + str(exc) + '\n')
 
-    print(count)
+    print(f'{count} строк(а)(слов(а)) с палиндром словами обнаружено в файле')

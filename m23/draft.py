@@ -256,3 +256,5 @@ with open('words.txt', 'r', encoding='utf8') as file, open('errors.log', 'w', en
             log_file.write(clear_line + ' ' + str(exc) + '\n')
 
     print(f'{count} строк(а)(слов(а)) с палиндром словами обнаружено в файле')
+
+

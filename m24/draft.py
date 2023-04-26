@@ -1,3 +1,5 @@
+import random
+
 class User:
     user_name = 'Admin'
     password = 'querty'
@@ -28,16 +30,16 @@ print(user_1.user_name, user_2.user_name)
 class Toyota:
     color_auto = 'Red'
     price = '1000000'
-    max_speed = '200'
-    cur_speed = '0'
+    max_speed = 200
+    cur_speed = 0
 
 
 car_1 = Toyota()
 car_2 = Toyota()
 car_3 = Toyota()
-car_1.cur_speed = '30'
-car_2.cur_speed = '60'
-car_3.cur_speed = '90'
+car_1.cur_speed = random.randint(0, 200)
+car_2.cur_speed = random.randint(0, 200)
+car_3.cur_speed = random.randint(0, 200)
 print(car_1.cur_speed, car_2.cur_speed, car_3.cur_speed)
 
 # Задача 2. Однотипные объекты В офис заказали небольшую партию из четырёх мониторов и трёх наушников. У монитора
@@ -57,24 +59,15 @@ class Display:
 
 class Headphones:
     headphones_name = 'Marshall'
-    headphones_micro = False
-    headphones_sensitivity = 100
+    headphones_micro = True
+    headphones_sensitivity = 108
 
 
-monitor_1 = Display()
-monitor_2 = Display()
-monitor_3 = Display()
-monitor_4 = Display()
-monitor_1.display_freq = 60
-monitor_2.display_freq = 144
-monitor_3.display_freq = 70
-monitor_4.display_freq = 60
+monitors = [Display() for _ in range(4)]
+headphones = [Headphones() for _ in range(3)]
+for index, number in enumerate([60, 144, 70, 50]):
+    monitors[index].display_freq = number
 
-headphones_1 = Headphones()
-headphones_2 = Headphones()
-headphones_3 = Headphones()
-headphones_1.headphones_micro = False
-headphones_2.headphones_micro = True
-headphones_3.headphones_micro = True
+headphones[0].headphones_micro = False
 
 

@@ -136,26 +136,26 @@ if not my_family.have_a_house:
 my_family.info()
 
 
-class Toyota:
-    color_auto = 'Red'
-    price = 1e6
-    max_speed = 200
-    cur_speed = 0
-
-    def info(self):
-        print(f'Color auto: {self.color_auto}\n'
-              f'Price: {self.price}\n'
-              f'Maximum speed: {self.max_speed}\n'
-              f'Currient speed: {self.cur_speed}\n')
-
-    def set_curr_speed(self, speed):
-        self.cur_speed = speed
-
-
-car_1 = Toyota()
-car_1.info()
-car_1.set_curr_speed(123)
-car_1.info()
+# class Toyota:
+#     color_auto = 'Red'
+#     price = 1e6
+#     max_speed = 200
+#     cur_speed = 0
+#
+#     def info(self):
+#         print(f'Color auto: {self.color_auto}\n'
+#               f'Price: {self.price}\n'
+#               f'Maximum speed: {self.max_speed}\n'
+#               f'Currient speed: {self.cur_speed}\n')
+#
+#     def set_curr_speed(self, speed):
+#         self.cur_speed = speed
+#
+#
+# car_1 = Toyota()
+# car_1.info()
+# car_1.set_curr_speed(123)
+# car_1.info()
 
 
 class Employee:
@@ -176,6 +176,72 @@ emp1.print_info()
 emp2.print_info()
 
 
+
+
+
+# Задача 1. Машина 3
+# Вам предстоит снова немного видоизменить класс Toyota из прошлого урока. На всякий случай вот описание класса.
+# Четыре атрибута:
+# цвет машины (например, красный),
+# цена (один миллион),
+# максимальная скорость (200),
+# текущая скорость (ноль).
+
+# Два метода:
+# Отображение информации об объекте класса.
+# Метод, который позволяет устанавливать текущую скорость машины.
+# Теперь все четыре атрибута должны инициализироваться при создании экземпляра класса (то есть передаваться в init). Реализуйте такое изменение класса.
+
+class Toyota:
+    def __init__(self, color_auto='Red', price=1e6, max_speed=200, cur_speed=0):
+        self.color_auto = color_auto
+        self.price = price
+        self.max_speed = max_speed
+        self.cur_speed = cur_speed
+
+    def info(self):
+        print(f'Color auto: {self.color_auto}\n'
+              f'Price: {self.price}\n'
+              f'Maximum speed: {self.max_speed}\n'
+              f'Currient speed: {self.cur_speed}\n')
+
+    def set_curr_speed(self, speed):
+        self.cur_speed = speed
+
+
+car_1 = Toyota('black', 1e6, 223, 0)
+# car_1.info()
+
+
+# Задача 2. Координаты точки
+# Объект «Точка» на плоскости имеет координаты X и Y. При создании новой точки могут передаваться пользовательские значения координат, по умолчанию x = 0, y = 0.
+# Реализуйте класс, который будет представлять эту точку, и напишите метод, который предоставляет информацию о ней. Также внутри класса пропишите счётчик, который будет отвечать за количество созданных точек.
+# Подсказка: счётчик можно объявить внутри самого класса и увеличивать его в методе __init__.
+class Coordinate_Dot:
+    count = 0
+
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+        Coordinate_Dot.count += 1
+
+    def info(self):
+        print(f'Координаты Х: {self.x}\n'
+              f'Координаты Y: {self.y}\n')
+
+
+dot_1 = Coordinate_Dot()
+dot_1.info()
+dot_2 = Coordinate_Dot(1, 2)
+dot_2.info()
+
+# Задача 3. Весёлая ферма
+# Для игры «Весёлая ферма» необходимо прописать два класса: класс «Картошка» и класс «Грядка картошки».
+#
+# У картошки есть её номер в грядке, а также стадия зрелости. Она может предоставлять информацию о своей зрелости и расти. Всего у картошки может быть четыре стадии зрелости.
+#
+# Грядка с картошкой содержит список картошки, которая на ней растёт, и может, собственно, взращивать всю эту картошку, а также предоставлять информацию о зрелости всей картошки на своей территории.
+
 # Веселая ферма
 class Potapo:
     states = {0: 'Отсутствует', 1: 'Росток', 2: 'Зеленая', 3: 'Зрелая'}
@@ -193,6 +259,7 @@ class Potapo:
         if self.state == 3:
             return True
         return False
+
     def print_state(self):
         print(f'Картошка {index} в стадии {Potapo.states[self.state]}')
 
@@ -210,7 +277,7 @@ class PotapoGarden:
         if not all([i_potapo.is_ripe() for i_potapo in self.potatoes]):
             print('Картошка еще не созрела!\n')
         else:
-            print('Вся картошка созрела! можно собирать')
+            print('Вся картошка созрела! можно собирать\n')
 
 
 my_garden = PotapoGarden(5)

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="draft m23 edu">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/skillbox.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/skillbox.iml" afterDir="false" />
-    </list>
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="изменения структуры папок и файлов. добавил практические работы, черновики перенес в одну папку" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,27 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00017" summary="initial commit">
-      <created>1666945469435</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1666945469435</updated>
-    </task>
-    <task id="LOCAL-00018" summary="initial commit">
-      <created>1666995319859</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1666995319859</updated>
-    </task>
-    <task id="LOCAL-00019" summary="initial commit">
-      <created>1667028478840</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1667028478840</updated>
     </task>
     <task id="LOCAL-00020" summary="initial commit">
       <created>1667029225431</created>
@@ -481,7 +457,28 @@
       <option name="project" value="LOCAL" />
       <updated>1682672804754</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="реоргазиниазция папок и файлов. добавил практические работы, черновики перенес в одну папку">
+      <created>1683917035595</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1683917035595</updated>
+    </task>
+    <task id="LOCAL-00067" summary="реоргазиниазция папок и файлов. добавил практические работы, черновики перенес в одну папку">
+      <created>1683917102553</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1683917102553</updated>
+    </task>
+    <task id="LOCAL-00068" summary="изменения структуры папок и файлов. добавил практические работы, черновики перенес в одну папку">
+      <created>1683917169660</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1683917169660</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -510,48 +507,11 @@
     <MESSAGE value="draft m22 os module continue edu" />
     <MESSAGE value="draft m23 edu" />
     <MESSAGE value="draft m24 edu" />
-    <option name="LAST_COMMIT_MESSAGE" value="draft m24 edu" />
+    <MESSAGE value="реоргазиниазция папок и файлов. добавил практические работы, черновики перенес в одну папку" />
+    <MESSAGE value="изменения структуры папок и файлов. добавил практические работы, черновики перенес в одну папку" />
+    <option name="LAST_COMMIT_MESSAGE" value="изменения структуры папок и файлов. добавил практические работы, черновики перенес в одну папку" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/draft_m16.py</url>
-          <line>222</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/m23/draft.py</url>
-          <line>179</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/m23/draft.py</url>
-          <line>186</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/m23/draft.py</url>
-          <line>248</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/m23/draft.py</url>
-          <line>249</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/m23/draft.py</url>
-          <line>250</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/m23/draft.py</url>
-          <line>239</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="index" />

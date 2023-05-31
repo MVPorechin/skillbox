@@ -1,0 +1,4 @@
+C:\Users\m_porechin\documents\blacklistfile_path, 
+file_path, 
+C:\Users\m_porechin\documents\gw_vnkt\squid 
+C:\Users\m_porechin\documents\gw_vnkt\squid\squid.conf 

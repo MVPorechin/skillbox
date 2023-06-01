@@ -63,3 +63,6 @@ air = Air()
 fire = Fire()
 earth = Earth()
 print(air + water, water + fire, water + earth)
+
+
+

@@ -62,4 +62,47 @@ cargoship.load()
 # Ещё есть робот — подводная лодка, который также является военным. У этого робота есть значение глубины, и при команде operate он делает то же, что и военный робот, плюс сообщает, что охрана ведётся под водой.
 #
 # Напишите программу, которая реализует все необходимые классы роботов.
+class Robot:
+    def __init__(self, model):
+        self.model = model
 
+    def __str__(self):
+        return '{} model {}'.format(self.__class__.__name__, self.model)
+
+    def operate(self):
+        print('Робот ездит по кругу')
+
+
+class WarRobot(Robot):
+    def __init__(self, gun, model):
+        super().__init__(model)
+        self.gun = gun
+
+    def operate(self):
+        print(f'Робот охраняет военный обьект при помощи {self.gun}')
+
+
+class VaccumCleaningRobot(Robot):
+    def __init__(self, gun, model, depth):
+        super().__init__(gun, model)
+        self.depth = depth
+
+    def operate(self):
+        print('Робот пылесосит пол')
+
+
+class SubmarineRobot(WarRobot):
+    def __init__(self, gun, model, depth):
+        super().__init__(gun, model)
+        self.depth = depth
+
+    def operate(self):
+        super().operate()
+        print(f'Охрана ведется под водой на глубине: {self.depth}')
+
+
+robot = Robot('X61')
+war_robot = WarRobot('blaster', 'Avrora')
+war_robot.operate()
+vaccum_cleaning_robot = VaccumCleaningRobot('laser', 'Thomas', 10)
+vaccum_cleaning_robot.operate()

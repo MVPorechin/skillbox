@@ -1,3 +1,4 @@
+import os
 # Задача 1.
 # Корабли Даны два класса кораблей — грузовой и военный. У каждого из этих кораблей есть своя модель,
 # и каждый может сделать два действия: сообщить свою модель и идти по воде. Грузовой корабль имеет такой атрибут,
@@ -63,6 +64,7 @@ cargoship.load()
 #
 # Напишите программу, которая реализует все необходимые классы роботов.
 class Robot:
+
     def __init__(self, model):
         self.model = model
 
@@ -74,6 +76,7 @@ class Robot:
 
 
 class WarRobot(Robot):
+
     def __init__(self, gun, model):
         super().__init__(model)
         self.gun = gun
@@ -82,27 +85,61 @@ class WarRobot(Robot):
         print(f'Робот охраняет военный обьект при помощи {self.gun}')
 
 
-class VaccumCleaningRobot(Robot):
-    def __init__(self, gun, model, depth):
-        super().__init__(gun, model)
-        self.depth = depth
+class VacuumCleaningRobot(Robot):
+
+    def __init__(self, model):
+        super().__init__(model)
+        self.garbage_bag = 0
 
     def operate(self):
         print('Робот пылесосит пол')
 
 
 class SubmarineRobot(WarRobot):
+
     def __init__(self, gun, model, depth):
         super().__init__(gun, model)
         self.depth = depth
 
     def operate(self):
         super().operate()
-        print(f'Охрана ведется под водой на глубине: {self.depth}')
+        print('Охрана ведется под водой на глубине', self.depth)
 
 
 robot = Robot('X61')
-war_robot = WarRobot('blaster', 'Avrora')
+robot.operate()
+war_robot = WarRobot('railgun', 'Avrora')
 war_robot.operate()
-vaccum_cleaning_robot = VaccumCleaningRobot('laser', 'Thomas', 10)
+vaccum_cleaning_robot = VacuumCleaningRobot(10)
 vaccum_cleaning_robot.operate()
+
+
+# Задача 3. Кастомные исключения
+#
+# Исключения в Python также являются классами, и все они берут свои истоки от самого главного класса — Exception.
+# И для создания своего собственного класса ошибки достаточно написать его дочерний класс. Например:
+#
+# class MyOwnException(Exception):
+#
+#     pass
+#
+# raise MyOwnException('Это моя ошибка!')
+#
+# Причём содержимое объекта исключения чаще всего так и оставляют (просто pass), чтобы не сломать автоматические обработчики исключений.
+# Напишите программу, которая считывает из файла numbers.txt пары чисел, делит первое число на второе и выводит ответ на экран.
+# Если первое число меньше второго, то программа выдаёт исключение DivisionError (нельзя делить большее на меньшее).
+# Дополнительно, с помощью try except, можно обработать исключение на своё усмотрение.
+class DivisionError(Exception):
+    pass
+
+
+path_to_file = os.path.abspath('numbers.txt')
+with open(path_to_file, 'r') as file_number:
+    for line in file_number:
+        try:
+            clear_line = line.rstrip()
+            first, second = clear_line.split()
+            if int(first) < int(second):
+                raise DivisionError('Нельзя делить большее на меньшее')
+        except(ValueError, DivisionError) as exc:
+            print(exc, type(exc), first, second)

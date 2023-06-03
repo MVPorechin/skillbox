@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add practice_m24_lession02.py&#10;lession 03 module 25">
-      <change afterPath="$PROJECT_DIR$/Module25/lesson04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module25/practice_m25_lession04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/skillbox.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/skillbox.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module25/lesson04.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module25/lesson04.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/m_porechin/Documents/python/skillbox/Module25",
+    "last_opened_file_path": "D:/python/skillbox/Module25",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   },
   "keyToStringList": {
@@ -67,11 +70,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python\skillbox\Module25" />
       <recent name="C:\Users\m_porechin\Documents\python\skillbox\Module25" />
       <recent name="C:\Users\m_porechin\Desktop" />
       <recent name="D:\games\Witch_Hunter\DEV\WitchHunter-0.18.0.0-pc\renpy\common" />
       <recent name="D:\games\Insexual_Awakening\Rus\IA-1.0-pc-Rus\game\scripts\minigames" />
-      <recent name="D:\python\skillbox" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\m_porechin\Documents\python\skillbox" />

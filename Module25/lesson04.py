@@ -80,7 +80,7 @@ class Student(Person):
         self.unisersity = unisersity
 
     def __str__(self):
-        info = super.__str__()
+        info = super().__str__()
         info = '\n'.join(
             (
                 info,
@@ -97,7 +97,7 @@ class Employee(Person):
         self.salary = salary
 
     def __str__(self):
-        info = super.__str__()
+        info = super().__str__()
         info = '\n'.join(
             (
                 info,

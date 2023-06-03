@@ -78,6 +78,7 @@ print(guard.get_hp(), man.get_hp())
 # Приземлиться (высота = 0, взрыв).
 # Взорваться (тут уже что угодно).
 
+
 class CanFly:
     def __init__(self):
         self.altitude = 0
@@ -131,3 +132,9 @@ class Missile(CanFly):
     def destroy_enemy_base(self):
         print("Ракета показала себя великолепно. Только упала не на ту планету (С) Вернер фон Браун")
 
+
+fly = Butterfly()
+superjet = Aircraft()
+dagger = Missile()
+
+dagger.land_on()

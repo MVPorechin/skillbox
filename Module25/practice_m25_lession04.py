@@ -7,9 +7,7 @@
 # Обычный гражданин: получает урон, равный двукратному переданному значению.
 # Реализуйте родительский и дочерние классы и их методы, используя принцип полиморфизма (а также инкапсуляции и наследования, конечно же).
 
-
 class Unit:
-
     def __init__(self, hp):
         self.__hp = hp
 
@@ -20,7 +18,7 @@ class Unit:
         return self.__hp
 
     def get_damage(self, amount):
-        self.set_hp(self.get_hp() - 0)  # -0 написан для наглядности, в теории  мы могли бы этого и не писать
+        self.set_hp(self.get_hp() - 0)
 
 
 class Soldier(Unit):
@@ -30,9 +28,20 @@ class Soldier(Unit):
 
 
 class Citizen(Unit):
+
     def get_damage(self, amount):
         self.set_hp(self.get_hp() - amount * 2)
 
+
+guard = Soldier(hp=100)
+man = Citizen(hp=99)
+guard.set_hp(amount=100)
+man.set_hp(amount=90)
+print(guard.get_hp(), man.get_hp())
+
+guard.get_damage(amount=10)
+man.get_damage(amount=11)
+print(guard.get_hp(), man.get_hp())
 
 # Задача 2. Полёт
 #
@@ -70,10 +79,9 @@ class Citizen(Unit):
 # Взорваться (тут уже что угодно).
 
 class CanFly:
-
     def __init__(self):
-        self.altitude = 0  # метров
-        self.velocity = 0  # км/ч
+        self.altitude = 0
+        self.velocity = 0
 
     def take_off(self):
         pass
@@ -86,7 +94,7 @@ class CanFly:
         self.velocity = 0
 
     def __str__(self):
-        return '{} высота {} скорость {}'.format(
+        return "{} высота {} скорость {}".format(
             self.__class__.__name__, self.altitude, self.velocity,
         )
 
@@ -104,7 +112,7 @@ class Aircraft(CanFly):
 
     def take_off(self):
         self.velocity = 300
-        self.altitude = 1000
+        self.velocity = 1000
 
     def fly(self):
         self.velocity = 800
@@ -121,4 +129,5 @@ class Missile(CanFly):
         self.destroy_enemy_base()
 
     def destroy_enemy_base(self):
-        print('Ракета показала себя великолепно. Только упала не на ту планету (C) Вернер фон Браун')
+        print("Ракета показала себя великолепно. Только упала не на ту планету (С) Вернер фон Браун")
+

@@ -202,13 +202,6 @@
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
     </task>
-    <task id="LOCAL-00033" summary="draft m20_v0.01">
-      <created>1671453975536</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1671453975536</updated>
-    </task>
     <task id="LOCAL-00034" summary="draft m20_v0.02">
       <created>1671454786155</created>
       <option name="number" value="00034" />
@@ -545,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685952674169</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="add practice_m24_lession02.py&#10;lession 05 module 25 correct some words">
+      <created>1685953261076</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1685953261076</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

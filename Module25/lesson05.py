@@ -60,18 +60,18 @@ class Student(Person):
 
     Attributes:
         max_count (int): максимальное количество инстансов
-        job (str): должность работника
+        university (str): должность работника
     """
     def __init__(self, name, age, university):
         super().__init__(name, age)
-        self.unisersity = university
+        self.university = university
 
     def __str__(self):
         info = super().__str__()
         info = '\n'.join(
             (
                 info,
-                "Студент учится в университете {}".format(self.unisersity)
+                "Студент учится в университете {}".format(self.university)
             )
         )
         return info

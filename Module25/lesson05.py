@@ -23,7 +23,7 @@ class Person:
 
     def get_age(self):
         """
-        Геттер для получения возрастра
+        Геттер для получения возраста
         :return: __age
         :rtype: int
         """

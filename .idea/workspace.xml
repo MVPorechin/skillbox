@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add practice_m24_lession02.py&#10;lession 04 module 25">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/skillbox.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/skillbox.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module25/lesson05.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module25/lesson05.py" afterDir="false" />
-    </list>
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add practice_m24_lession02.py&#10;lession 05 module 25 correct some words" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,13 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00032" summary="draft m20_v0.01">
-      <created>1671453948896</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1671453948896</updated>
     </task>
     <task id="LOCAL-00033" summary="draft m20_v0.01">
       <created>1671453975536</created>
@@ -550,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685798090211</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="add practice_m24_lession02.py&#10;lession 05 module 25 correct some words">
+      <created>1685952674169</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1685952674169</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +583,8 @@
     <MESSAGE value="add practice_m24_lession02.py&#10;lession 02 module 25" />
     <MESSAGE value="add practice_m24_lession02.py&#10;lession 03 module 25" />
     <MESSAGE value="add practice_m24_lession02.py&#10;lession 04 module 25" />
-    <option name="LAST_COMMIT_MESSAGE" value="add practice_m24_lession02.py&#10;lession 04 module 25" />
+    <MESSAGE value="add practice_m24_lession02.py&#10;lession 05 module 25 correct some words" />
+    <option name="LAST_COMMIT_MESSAGE" value="add practice_m24_lession02.py&#10;lession 05 module 25 correct some words" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

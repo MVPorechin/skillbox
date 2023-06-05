@@ -62,9 +62,9 @@ class Student(Person):
         max_count (int): максимальное количество инстансов
         job (str): должность работника
     """
-    def __init__(self, name, age, unisersity):
+    def __init__(self, name, age, university):
         super().__init__(name, age)
-        self.unisersity = unisersity
+        self.unisersity = university
 
     def __str__(self):
         info = super().__str__()

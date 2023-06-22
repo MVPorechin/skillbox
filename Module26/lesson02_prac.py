@@ -11,11 +11,26 @@
 # значения будут выдаваться бесконечно.
 
 
-class CountIterator:
+class СountIterator:
     """
     Класс Бесконечный итератор.
-    Attributes:
+    Arguments:
         __count(int) = счетчик
     """
-    __count = 0
+
     def __init__(self):
+        self.__count = 0
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        self.__count += 1
+        return 'infiniti'
+
+
+my_iter = СountIterator()
+
+for i_elem in my_iter:
+
+    print(i_elem)

@@ -1,28 +1,36 @@
+import re
+
+
 class Solution(object):
     def isPalindrome(self, s):
         """
         :type s: str
         :rtype: bool
         """
-        result = []
-        index = 0
-        # pure_string = ''.join(sym for sym in s if sym.isalpha()).lower()
-        # if len(pure_string) % 2 == 0:
-        #     length = len(pure_string)
-        # else:
-        #     length = len(pure_string) - 1
-        # if pure_string[:length] == pure_string[length:]:
-        #     return True
-        while index != len(s) // 2:
+        left_index = 0
+        right_index = len(s) - 1
 
-            if s[index].isalpha() == s[-index].isalpha() and s[index] == s[-index]:
-                result.append(True)
-            else:
-                result.append(False)
-            index += 1
+        while left_index < right_index:
+            while not (s[left_index].isdigit() or s[left_index].isalpha()) and left_index < right_index:
+                left_index += 1
+            while not (s[right_index].isdigit() or s[right_index].isalpha()) and left_index < right_index:
+                right_index -= 1
+            if s[left_index].lower() != s[right_index].lower():
+                return False
+            left_index += 1
+            right_index -= 1
+        return True
 
-        # if all(result):
-        #     return True
+        # Понравилось решение, я изначально подобно размышлял, то предлагал сравнивать срез на пополам.
+        # А тут более элегантное.
+
+        pure_string = re.sub(r'[\W_]', '', s)
+        pure_string = pure_string.lower()
+
+        if pure_string == pure_string[::-1]:
+            return True
+
+        return False
 
 
 my_solution = Solution()

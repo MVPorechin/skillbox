@@ -41,7 +41,6 @@ def file_parser(path_to_file):
     with open(path_to_file) as file:
         for line in file:
             clear_line_sum = sum(numbers_from_text(line))
-            # https://docs-python.ru/tutorial/vstroennye-funktsii-interpretatora-python/funktsija-map/
             yield clear_line_sum
 
 

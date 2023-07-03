@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add practice 04 m26">
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add task palindrome II">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scratch_book/680_Valid_Palindrome_II.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/680_Valid_Palindrome_II.py" afterDir="false" />
     </list>
@@ -205,13 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00039" summary="initial commit">
-      <created>1671480689990</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1671480689990</updated>
     </task>
     <task id="LOCAL-00040" summary="initial commit">
       <created>1671481425179</created>
@@ -549,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687988139586</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="add task palindrome II">
+      <created>1688389786724</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1688389786725</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -564,7 +564,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&#10;initial commit" />
     <MESSAGE value="draft m20_v0.01" />
     <MESSAGE value="draft m20_v0.02" />
     <MESSAGE value="initial commit" />
@@ -589,7 +588,8 @@
     <MESSAGE value="practice 02 m26&#10;add some scratches" />
     <MESSAGE value="add palindrome" />
     <MESSAGE value="add practice 04 m26" />
-    <option name="LAST_COMMIT_MESSAGE" value="add practice 04 m26" />
+    <MESSAGE value="add task palindrome II" />
+    <option name="LAST_COMMIT_MESSAGE" value="add task palindrome II" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -633,31 +633,6 @@
           <url>file://$PROJECT_DIR$/Module26/lession03_prac01.py</url>
           <line>8</line>
           <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/680_Valid_Palindrome_II.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/680_Valid_Palindrome_II.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/680_Valid_Palindrome_II.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/680_Valid_Palindrome_II.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/680_Valid_Palindrome_II.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

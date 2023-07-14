@@ -4,12 +4,18 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        left_point = 1
-        for right_point in range(1, len(nums)):
-            if nums[right_point] != nums[right_point - 1]:
-                nums[left_point] = nums[right_point]
-                left_point += 1
-        return left_point
+        uniq_num = 0
+        for index in range(len(nums)):
+            if nums[index] not in nums[:index]:
+                uniq_num += 1
+                nums[uniq_num] = nums[index]
+        return uniq_num
+        # left_point = 1
+        # for right_point in range(1, len(nums)):
+        #     if nums[right_point] != nums[right_point - 1]:
+        #         nums[left_point] = nums[right_point]
+        #         left_point += 1
+        # return left_point
 
 
 my_sol = Solution()

@@ -16,13 +16,41 @@
 # подняться к уходящему сотруднику, а потом пройти всех остальных — например, в порядке {1,2,3,4,6}{1,2,3,4,6}
 def clerk() -> int:
     count_spec, time = map(int, input().split())
-    pos_floor = list(map(int, input().split()))
-    pos_first = int(input())
-
-    if time and sum(pos_floor[:pos_first - 1]) <= pos_first:
-        return pos_floor[-1] - pos_floor[0]
-    else:
-        return (pos_floor[pos_first - 1] - pos_floor[0] - 1) + pos_floor[-1]
-
+    floors = list(map(int, input().split()))
+    position_first = int(input())
+    if time and sum(floors[:position_first - 1]) <= position_first:
+        return  floors[-1] - floors[0]
+    elif floors[position_first - 1] - floors[0] and floors[-1] - floors[position_first - 1] > time:
+        r = min(floors[position_first - 1] - floors[0], floors[-1] - floors[position_first - 1])
+        r += floors[-1] - floors[0]
+        return r
 
 print(clerk())
+
+# def clerk() -> int:
+#     # count_spec, time = map(int, input().split())
+#     # floors = list(map(int, input().split()))
+#     # position_first = int(input())
+#     count_spec, time = 6, 4
+#     floors = [1,  2,  3,  6,  8,  25]
+#     position_first = 2
+#     # count_spec, time = 5, 5
+#     # floors = [1,  4,  9,  16,  25]
+#     # position_first = 2
+#
+#     if floors[position_first - 1] - floors[0] and floors[-1] - floors[position_first - 1] > time:
+#         r = min(floors[position_first - 1] - floors[0], floors[-1] - floors[position_first - 1])
+#         r += floors[-1] - floors[0]
+#         return r
+#
+#         # if len(floors[position_first:]) > len(floors[:position_first]):
+#         #     first = floors[position_first:]
+#         #     second = floors[:position_first]
+#         #     return (first[-1] - first[0]) + second[-1]
+#         # else:
+#         #     first = floors[:position_first]
+#         #     second = floors[position_first:]
+#         #     return (first[-1] - first[0]) + (second[0] - second[-1])
+#
+#
+# print(clerk())

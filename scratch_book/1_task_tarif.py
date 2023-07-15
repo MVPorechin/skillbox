@@ -11,14 +11,13 @@
 # примере Костя укладывается в тарифный план, поэтому платит только за него. Примеры данных Пример 1 Ввод: 100 10 12
 # 15 Вывод: 160 Пример 2 Ввод: 100 10 12 1 Вывод: 100
 
-nums = list(map(int, input().split()))
-if nums[3] <= nums[1]:
-    print(f'{nums[0]}')
-else:
-    print(f'{nums[0] + nums[2] * (nums[3] - nums[1])}')
 
-# cost_rate, size, cost_extra_mb, size_traffic_user = [int(cost_rate) for cost_rate in input('').split()]
-# if size_traffic_user > size:
-#     print(f'{cost_rate + cost_extra_mb * (size_traffic_user - size)}')
-# else:
-#     print(f'{cost_rate}')
+def billing() -> int:
+    nums = list(map(int, input().split()))
+    if nums[3] <= nums[1]:
+        return nums[0]
+    else:
+        return nums[0] + nums[2] * (nums[3] - nums[1])
+
+
+print(billing())

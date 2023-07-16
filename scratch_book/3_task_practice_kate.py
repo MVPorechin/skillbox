@@ -15,19 +15,20 @@
 # первом примере времени достаточно, чтобы Катя поднялась по этажам по порядку. Во втором примере Кате понадобится
 # подняться к уходящему сотруднику, а потом пройти всех остальных — например, в порядке {1,2,3,4,6}{1,2,3,4,6}
 # 1 var
-count_spec, time = map(int, input().split())
-floors = list(map(int, input().split()))
-position_first = int(input())
-current_f = floors[position_first - 1]
-max_f = max(floors)
-min_f = min(floors)
-res = 0
+def clerk() -> int:
+    count_spec, time = map(int, input().split())
+    floors = list(map(int, input().split()))
+    position_first = int(input())
+    current_f = floors[position_first - 1]
+    max_f = max(floors)
+    min_f = min(floors)
+    res = 0
 
-if current_f - min_f > time and (max_f - current_f) > time:
-    res = min(current_f - min_f, max_f - current_f)
+    if current_f - min_f > time and (max_f - current_f) > time:
+        res = min(current_f - min_f, max_f - current_f)
 
-res += max_f - min_f
-print(res)
+    res += max_f - min_f
+    return res
 
 # 2 var
 count_spec, time = map(int, input().split())

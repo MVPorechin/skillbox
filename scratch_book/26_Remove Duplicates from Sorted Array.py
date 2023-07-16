@@ -6,10 +6,10 @@ class Solution(object):
         """
         uniq_num = 0
         for index in range(len(nums)):
-            if nums[index] not in nums[:index]:
+            if nums[index] in nums[:index]:
                 uniq_num += 1
                 nums[uniq_num] = nums[index]
-        return uniq_num
+        return uniq_num, nums
         # left_point = 1
         # for right_point in range(1, len(nums)):
         #     if nums[right_point] != nums[right_point - 1]:

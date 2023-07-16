@@ -14,43 +14,54 @@
 # Выведите одно число — минимально возможное число лестничных пролетов, которое понадобится пройти Кате. Замечание В
 # первом примере времени достаточно, чтобы Катя поднялась по этажам по порядку. Во втором примере Кате понадобится
 # подняться к уходящему сотруднику, а потом пройти всех остальных — например, в порядке {1,2,3,4,6}{1,2,3,4,6}
-def clerk() -> int:
-    count_spec, time = map(int, input().split())
-    floors = list(map(int, input().split()))
-    position_first = int(input())
-    if time and sum(floors[:position_first - 1]) <= position_first:
-        return  floors[-1] - floors[0]
-    elif floors[position_first - 1] - floors[0] and floors[-1] - floors[position_first - 1] > time:
-        r = min(floors[position_first - 1] - floors[0], floors[-1] - floors[position_first - 1])
-        r += floors[-1] - floors[0]
-        return r
+# 1 var
+count_spec, time = map(int, input().split())
+floors = list(map(int, input().split()))
+position_first = int(input())
+current_f = floors[position_first - 1]
+max_f = max(floors)
+min_f = min(floors)
+res = 0
 
-print(clerk())
+if current_f - min_f > time and (max_f - current_f) > time:
+    res = min(current_f - min_f, max_f - current_f)
+
+res += max_f - min_f
+print(res)
+
+# 2 var
+count_spec, time = map(int, input().split())
+floors = list(map(int, input().split()))
+position_first = int(input())
+min_max = floors[-1] - floors[0]
+value = min(min_max + floors[-1] - floors[position_first - 1],
+            min_max + floors[position_first - 1] - floors[0])
+if time and sum(floors[:position_first - 1]) <= position_first:
+    print(min_max)
+else:
+    print(value)
+
+
 
 # def clerk() -> int:
-#     # count_spec, time = map(int, input().split())
-#     # floors = list(map(int, input().split()))
-#     # position_first = int(input())
-#     count_spec, time = 6, 4
-#     floors = [1,  2,  3,  6,  8,  25]
-#     position_first = 2
-#     # count_spec, time = 5, 5
-#     # floors = [1,  4,  9,  16,  25]
-#     # position_first = 2
-#
-#     if floors[position_first - 1] - floors[0] and floors[-1] - floors[position_first - 1] > time:
-#         r = min(floors[position_first - 1] - floors[0], floors[-1] - floors[position_first - 1])
-#         r += floors[-1] - floors[0]
-#         return r
-#
-#         # if len(floors[position_first:]) > len(floors[:position_first]):
-#         #     first = floors[position_first:]
-#         #     second = floors[:position_first]
-#         #     return (first[-1] - first[0]) + second[-1]
-#         # else:
-#         #     first = floors[:position_first]
-#         #     second = floors[position_first:]
-#         #     return (first[-1] - first[0]) + (second[0] - second[-1])
+#     count_spec, time = map(int, input().split())
+#     floors = list(map(int, input().split()))
+#     position_first = int(input())
+#     min_max = floors[-1] - floors[0]
+#     value = min(min_max + floors[-1] - floors[position_first - 1],
+#                 min_max + floors[position_first - 1] - floors[0])
+#     if time and sum(floors[:position_first - 1]) <= position_first:
+#         return min_max
+#     else:
+#         return value
 #
 #
 # print(clerk())
+
+
+# count_spec, time = 6, 4
+# floors = [1,  2,  3,  6,  8,  25]
+# position_first = 5
+# count_spec, time = 5, 5
+# floors = [1,  4,  9,  16,  25]
+# position_first = 2

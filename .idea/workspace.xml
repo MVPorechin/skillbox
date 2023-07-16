@@ -206,13 +206,6 @@
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
     </task>
-    <task id="LOCAL-00042" summary="initial commit">
-      <created>1671481898314</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1671481898314</updated>
-    </task>
     <task id="LOCAL-00043" summary="draft m20_v0.03">
       <created>1674478730901</created>
       <option name="number" value="00043" />
@@ -549,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689436815190</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="add">
+      <created>1689457465342</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1689457465342</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -641,18 +641,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scratch_book/3_task_practice_kate.py</url>
-          <line>40</line>
+          <line>74</line>
           <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/3_task_practice_kate.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/3_task_practice_kate.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="88" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

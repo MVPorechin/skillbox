@@ -6,7 +6,7 @@ class Solution(object):
         """
         uniq_num = 0
         for index in range(len(nums)):
-            if nums[index] in nums[:index]:
+            if nums[index] not in nums[:index]:
                 uniq_num += 1
                 nums[uniq_num] = nums[index]
         return uniq_num, nums

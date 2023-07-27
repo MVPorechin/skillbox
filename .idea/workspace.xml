@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add">
-      <change afterPath="$PROJECT_DIR$/Module27/lesson01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module27/lesson01_prac.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module27/lesson02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module27/lesson02_prac.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module26/lession02.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module26/lesson02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module26/lession03.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module26/lesson03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module26/lession03_prac01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module26/lesson03_prac01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module26/lession_prac01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module26/lesson_prac01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +82,7 @@
       <recent name="D:\python\skillbox\pet_project\m22" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.lesson02">
+  <component name="RunManager" selected="Python.lesson02_prac">
     <configuration name="11. Replace Elements with Greatest Element on Right Side" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,27 +96,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_book/11. Replace Elements with Greatest Element on Right Side.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="4_task_paper_max_value" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="skillbox" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch_book" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_book/4_task_paper_max_value.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,13 +167,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="lesson02_prac" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="skillbox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module27" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module27/lesson02_prac.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lesson02_prac" />
         <item itemvalue="Python.lesson02" />
         <item itemvalue="Python.lesson01_prac" />
         <item itemvalue="Python.lesson01" />
         <item itemvalue="Python.11. Replace Elements with Greatest Element on Right Side" />
-        <item itemvalue="Python.4_task_paper_max_value" />
       </list>
     </recent_temporary>
   </component>
@@ -212,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00049" summary="draft m21_v0.03">
-      <created>1675782184867</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1675782184867</updated>
     </task>
     <task id="LOCAL-00050" summary="draft m21_v0.03">
       <created>1675858818788</created>
@@ -556,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690286352971</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="add">
+      <created>1690407125308</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1690407125308</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

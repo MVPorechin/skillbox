@@ -1,35 +1,26 @@
-# n, k = map(int, input().split())
-# numbers = list(map(int, input().split()))
-n, k = 5, 2
-numbers = [1, 2, 1, 3, 5]
+# Задача 4 (2 вариант)
+def foo(k, nums):
+    num_count = {}
+    for num in nums:
+        for rank, n in enumerate(num[::-1]):
+            if n == '9':
+                continue
+            key = 10 ** rank * (9 - int(n))
+            num_count[key] = 1 + num_count.get(key, 0)
+
+    val_count = sorted(num_count.items(), reverse=True)
+
+    res = 0
+    count_res = 0
+    for val, count in val_count:
+        for _ in range(count):
+            res += val
+            count_res += 1
+            if count_res == k:
+                return res
+    return res
 
 
-def summary_value_in_list(lst: list) -> int:
-    return sum(lst)
-
-
-def increase(value: int) -> int:
-    if 1 <= value < 9:
-        return 9
-    elif 10 <= value <= 99:
-        return 90 + (value % 10)
-    elif 100 <= value <= 999:
-        return 900 + (value % 100)
-
-
-def main(num: int, kom: int, list_num: list) -> int:
-    first = summary_value_in_list(list_num)
-    for index in range(num):
-        if num == 1 and increase(value=list_num[index]) - list_num[index] == 0:
-            return list_num
-        # elif increase(value=list_num[index]) - list_num[index] >
-
-
-
-
-
-        second = summary_value_in_list(numbers)
-        return second - first
-
-
-print(main(num=n, kom=k, list_num=numbers))
+_, k = map(int, input().split())
+nums = input().split()
+print(foo(k, nums))

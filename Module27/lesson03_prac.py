@@ -16,9 +16,7 @@ from typing import Callable, Any
 def bread(func: Callable) -> Callable:
     def wrapped_func(*args, **kwargs):
         print('</----------\>')
-
         func(*args, **kwargs)
-
         print('<\______/>')
 
     return wrapped_func
@@ -27,9 +25,7 @@ def bread(func: Callable) -> Callable:
 def ingredients(func: Callable) -> Callable:
     def wrapped_func(*args, **kwargs):
         print('#помидоры#')
-
         func(*args, **kwargs)
-
         print('~салат~')
 
     return wrapped_func
@@ -42,3 +38,35 @@ def burger(meat: str) -> Any:
 
 
 burger(meat='--ветчина--')
+
+
+# Задача 2. Плагины
+# Один проект состоит из огромного количества разнообразных функций, часть из которых используется
+# в других проектах в качестве плагинов, то есть они как бы «подключаются» и создают дополнительный функционал.
+#
+# Реализуйте специальный декоратор, который будет «регистрировать» нужные функции как плагины и заносить их в
+# соответствующий словарь.
+
+from typing import Callable, Dict
+
+PLUGINS: Dict[str, Callable] = dict()
+
+
+def register(func: Callable) -> Callable:
+    """    Декоратор регистрирует функцию как плагин    """
+    PLUGINS[func.__name__] = func
+    return func
+
+
+@register
+def say_hello(name: str) -> str:
+    return 'Hello {name}'.format(name=name)
+
+
+@register
+def say_goodbye(name: str) -> str:
+    return 'Goodbye {name}'.format(name=name)
+
+
+print(PLUGINS)
+print(say_hello('Tom'))

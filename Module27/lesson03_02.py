@@ -1,10 +1,10 @@
 from typing import Callable, Dict
 
-PLUGINS: Dict[str: Callable] = dict()
+PLUGINS: Dict[str, Callable] = dict()
 
 
 def register(func: Callable) -> Callable:
-    """    Декоратор регистрирует функцию как плаги    """
+    """    Декоратор регистрирует функцию как плагин    """
     PLUGINS[func.__name__] = func
     return func
 

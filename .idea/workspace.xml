@@ -204,13 +204,6 @@
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
     </task>
-    <task id="LOCAL-00053" summary="draft m22 os module">
-      <created>1679863141144</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1679863141144</updated>
-    </task>
     <task id="LOCAL-00054" summary="draft m22 os module continue edu">
       <created>1680011286987</created>
       <option name="number" value="00054" />
@@ -547,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690546960759</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="add module 27, practice decarator add new practice">
+      <created>1690547594702</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1690547594702</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

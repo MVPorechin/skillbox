@@ -72,10 +72,7 @@ print(PLUGINS)
 print(say_hello('Tom'))
 
 
-
-
-plugins = {}
-
+plugins = dict()
 
 def go_to_plugins(func):
     plugins[func.__name__] = func

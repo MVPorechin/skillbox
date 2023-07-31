@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add module 27, practice decarator add new practice">
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="121 task. add some code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch_book/2_task_pie.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/2_task_pie.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00056" summary="draft m23 edu">
-      <created>1681200561028</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1681200561028</updated>
     </task>
     <task id="LOCAL-00057" summary="draft m23 edu">
       <created>1681310584526</created>
@@ -551,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690665824880</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="121 task. add some code">
+      <created>1690804560073</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1690804560074</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -566,7 +565,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="draft m20_v0.03" />
     <MESSAGE value="draft m21_v0.03" />
     <MESSAGE value="draft m22 os module" />
     <MESSAGE value="draft m22 os module continue edu" />
@@ -591,7 +589,8 @@
     <MESSAGE value="add" />
     <MESSAGE value="add module 27, practice decarator" />
     <MESSAGE value="add module 27, practice decarator add new practice" />
-    <option name="LAST_COMMIT_MESSAGE" value="add module 27, practice decarator add new practice" />
+    <MESSAGE value="121 task. add some code" />
+    <option name="LAST_COMMIT_MESSAGE" value="121 task. add some code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -655,16 +654,6 @@
           <url>file://$PROJECT_DIR$/scratch_book/2_task_pie.py</url>
           <line>20</line>
           <option name="timeStamp" value="174" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="175" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="176" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -3,21 +3,18 @@ from typing import List
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        max_value, min_value = prices[-1], 1
-        for index in range(len(prices), 0, -1):
+        best_profit = 0
+        left = len(prices) // 2
+        for buy_price in range(left):
+            for sell_price in range(len(prices)-1, left-1, -1):
+                profit = prices[sell_price] - prices[buy_price]
+                if profit > best_profit:
+                    best_profit = profit
 
-            if prices[index - 1] > max_value:
-                max_value = prices[index - 1]
-            elif prices[index - 1] < max_value:
-                min_value = prices[index - 1]
-            # elif prices[index - 1] < max_value:
-            #     prices[index - 1] = max_value
-
-        max_value
-        return max_value, min_value
+        return best_profit
 
 
 my_sol = Solution()
-result = my_sol.maxProfit(prices=[7,1,5,3,6,4])
+result = my_sol.maxProfit(prices=[7,6,4,3,1])
 
 print(result)

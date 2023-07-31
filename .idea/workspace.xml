@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add module 27, practice decarator add new practice">
-      <change afterPath="$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch_book/2_task_pie.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/2_task_pie.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +105,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lesson03" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="2_task_pie" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -112,11 +113,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module27" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch_book" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module27/lesson03.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_book/2_task_pie.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,10 +192,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.121. Best Time to Buy and Sell Stock" />
+        <item itemvalue="Python.2_task_pie" />
         <item itemvalue="Python.lesson04" />
         <item itemvalue="Python.lesson03_prac" />
         <item itemvalue="Python.lesson03_02" />
-        <item itemvalue="Python.lesson03" />
       </list>
     </recent_temporary>
   </component>
@@ -649,6 +650,21 @@
           <url>file://$PROJECT_DIR$/scratch_book/4_task_paper_max_value.py</url>
           <line>1</line>
           <option name="timeStamp" value="173" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch_book/2_task_pie.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="176" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

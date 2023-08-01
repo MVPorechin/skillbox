@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="121 task. add some code">
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="121 task. done">
+      <change afterPath="$PROJECT_DIR$/scratch_book/5_task_.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <recent name="D:\python\skillbox\pet_project\m22" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.121. Best Time to Buy and Sell Stock">
+  <component name="RunManager" selected="Python.5_task_">
     <configuration name="121. Best Time to Buy and Sell Stock" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lesson03_02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="4_task_paper_max_value" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,11 +133,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module27" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch_book" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module27/lesson03_02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_book/4_task_paper_max_value.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,7 +146,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lesson03_prac" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="5_task_" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -154,11 +154,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module27" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch_book" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module27/lesson03_prac.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_book/5_task_.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.5_task_" />
         <item itemvalue="Python.121. Best Time to Buy and Sell Stock" />
+        <item itemvalue="Python.4_task_paper_max_value" />
         <item itemvalue="Python.2_task_pie" />
         <item itemvalue="Python.lesson04" />
-        <item itemvalue="Python.lesson03_prac" />
-        <item itemvalue="Python.lesson03_02" />
       </list>
     </recent_temporary>
   </component>
@@ -206,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00058" summary="draft m23 edu">
-      <created>1681683432292</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1681683432293</updated>
     </task>
     <task id="LOCAL-00059" summary="draft m23 edu">
       <created>1681911000017</created>
@@ -550,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690811570186</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="121 task. done">
+      <created>1690875607039</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1690875607039</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -565,7 +565,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="draft m21_v0.03" />
     <MESSAGE value="draft m22 os module" />
     <MESSAGE value="draft m22 os module continue edu" />
     <MESSAGE value="draft m23 edu" />
@@ -590,7 +589,8 @@
     <MESSAGE value="add module 27, practice decarator" />
     <MESSAGE value="add module 27, practice decarator add new practice" />
     <MESSAGE value="121 task. add some code" />
-    <option name="LAST_COMMIT_MESSAGE" value="121 task. add some code" />
+    <MESSAGE value="121 task. done" />
+    <option name="LAST_COMMIT_MESSAGE" value="121 task. done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -627,11 +627,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scratch_book/4_task_paper_max_value.py</url>
-          <line>2</line>
-          <option name="timeStamp" value="133" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/4_task_paper_max_value.py</url>
           <line>23</line>
           <option name="timeStamp" value="135" />
         </line-breakpoint>
@@ -644,11 +639,6 @@
           <url>file://$PROJECT_DIR$/scratch_book/11. Replace Elements with Greatest Element on Right Side.py</url>
           <line>11</line>
           <option name="timeStamp" value="169" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/4_task_paper_max_value.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="173" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scratch_book/2_task_pie.py</url>
@@ -664,6 +654,21 @@
           <url>file://$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py</url>
           <line>9</line>
           <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch_book/4_task_paper_max_value.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch_book/4_task_paper_max_value.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch_book/4_task_paper_max_value.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="180" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

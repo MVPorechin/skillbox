@@ -207,13 +207,6 @@
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
     </task>
-    <task id="LOCAL-00057" summary="draft m23 edu">
-      <created>1681310584526</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1681310584526</updated>
-    </task>
     <task id="LOCAL-00058" summary="draft m23 edu">
       <created>1681683432292</created>
       <option name="number" value="00058" />
@@ -550,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690804560074</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="121 task. add some code">
+      <created>1690811570186</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1690811570186</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -659,6 +659,11 @@
           <url>file://$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py</url>
           <line>8</line>
           <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="176" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

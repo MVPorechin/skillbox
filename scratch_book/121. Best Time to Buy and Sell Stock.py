@@ -7,7 +7,9 @@ class Solution:
         buy_price = prices[0]
         for sell_price in prices[1:]:
             buy_price = min(buy_price, sell_price)
-            best_profit = max(best_profit, sell_price - buy_price)
+            profit = sell_price - buy_price
+            if profit > best_profit:
+                best_profit = profit
 
         return best_profit
 

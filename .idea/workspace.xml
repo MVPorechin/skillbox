@@ -558,7 +558,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="170" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="126" />
+                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="41" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

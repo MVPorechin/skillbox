@@ -1,4 +1,5 @@
 #https://leetcode.com/problems/container-with-most-water/
+#https://telegra.ph/13-Container-With-Most-Water-srednyaya-08-06
 from typing import List
 
 

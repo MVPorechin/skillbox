@@ -1,4 +1,4 @@
-# https://telegra.ph/5-zadanie-07-11
+#https://telegra.ph/5-zadanie-07-11
 
 def increase_by_ten(step: int = 1, lenght: int = 1) -> int:
     """
@@ -12,7 +12,7 @@ def increase_by_ten(step: int = 1, lenght: int = 1) -> int:
     if lenght == 1:
         return step
     else:
-        lenght -= 1
+        lenght -= 10
         return increase_by_ten(step=step * 10 + 1, lenght=lenght)
 
 

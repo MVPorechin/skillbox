@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="task 05 initial">
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="task 05">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scratch_book/5_task_.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/5_task_.py" afterDir="false" />
     </list>
@@ -206,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00060" summary="draft m24 edu">
-      <created>1682499970004</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1682499970004</updated>
     </task>
     <task id="LOCAL-00061" summary="draft m24 edu">
       <created>1682503800213</created>
@@ -550,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691069918696</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="task 05">
+      <created>1691103163482</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1691103163482</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,7 +573,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="draft m22 os module continue edu" />
     <MESSAGE value="draft m23 edu" />
     <MESSAGE value="draft m24 edu" />
     <MESSAGE value="реоргазиниазция папок и файлов. добавил практические работы, черновики перенес в одну папку" />
@@ -598,7 +597,8 @@
     <MESSAGE value="121 task. add some code" />
     <MESSAGE value="121 task. done" />
     <MESSAGE value="task 05 initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 05 initial" />
+    <MESSAGE value="task 05" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 05" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -677,6 +677,16 @@
           <url>file://$PROJECT_DIR$/scratch_book/4_task_paper_max_value.py</url>
           <line>18</line>
           <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch_book/5_task_.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch_book/5_task_.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="188" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

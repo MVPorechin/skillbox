@@ -3,11 +3,50 @@
 from typing import List
 
 
+def min_value(first: int, second: int) -> int:
+    """
+    Моя функция для сравнения 2ух чисел и нахождения минимума среди их.
+    :param first: первое целое число
+    :param second: второе целое число
+    :return int: минимальное число среди двух представленных
+    """
+    if first < second:
+        return first
+
+    return second
+
+
+def max_value(first: int, second: int) -> int:
+    """
+    Моя функция для сравнения 2ух чисел и нахождения максимума среди их.
+    :param first : Первое целое число
+    :param second: второе целое число
+    :return int: максимальное число среди двух представленных
+    """
+    if first > second:
+        return first
+
+    return second
+
+
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-        buy_price = height[0]
-        for sell_price in height[1:]:
-            buy_price = min(buy_price, sell_price)
-            profit = sell_price - buy_price
-            if profit > best_profit:
-                best_profit = profit
+        max_sum = 0
+        left = 0
+        right = len(height)-1
+
+        while left != right:
+            gap = min_value(first=height[left], second=height[right]) * (right - 1)
+            max_sum = max_value(first=max_sum, second=gap)
+
+            if height[left] < height[right]:
+                left += 1
+            else:
+                right -= 1
+
+        return max_sum
+
+
+my_sol = Solution()
+res = my_sol.maxArea(height=[1,1])
+print(res)

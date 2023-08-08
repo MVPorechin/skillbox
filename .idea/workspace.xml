@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add split_file" />
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add split_file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch_book/split_txt_in_one_txt.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/read_from_files_write_to_file.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +82,7 @@
       <recent name="D:\python\skillbox\pet_project\m22" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.split_txt_in_one_txt">
+  <component name="RunManager" selected="Python.read_from_files_write_to_file">
     <configuration name="11. Container With Most Water" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,7 +167,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="split_txt_in_one_txt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="read_from_files_write_to_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -176,7 +179,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_book/split_txt_in_one_txt.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\m_porechin\Documents\python\skillbox\scratch_book\read_from_files_write_to_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,7 +190,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.split_txt_in_one_txt" />
+        <item itemvalue="Python.read_from_files_write_to_file" />
         <item itemvalue="Python.5_task_" />
         <item itemvalue="Python.11. Container With Most Water" />
         <item itemvalue="Python.121. Best Time to Buy and Sell Stock" />
@@ -203,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00065" summary="draft m24 edu">
-      <created>1682672804754</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1682672804754</updated>
     </task>
     <task id="LOCAL-00066" summary="реоргазиниазция папок и файлов. добавил практические работы, черновики перенес в одну папку">
       <created>1683917035595</created>
@@ -547,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691505443579</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="add split_file">
+      <created>1691505768277</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1691505768277</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -696,18 +699,18 @@
           <option name="timeStamp" value="190" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/split_txt_in_one_txt.py</url>
-          <line>14</line>
+          <url>file://$PROJECT_DIR$/scratch_book/read_from_files_write_to_file.py</url>
+          <line>12</line>
           <option name="timeStamp" value="192" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/split_txt_in_one_txt.py</url>
-          <line>15</line>
+          <url>file://$PROJECT_DIR$/scratch_book/read_from_files_write_to_file.py</url>
+          <line>13</line>
           <option name="timeStamp" value="193" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scratch_book/split_txt_in_one_txt.py</url>
-          <line>11</line>
+          <url>file://$PROJECT_DIR$/scratch_book/read_from_files_write_to_file.py</url>
+          <line>9</line>
           <option name="timeStamp" value="194" />
         </line-breakpoint>
       </breakpoints>

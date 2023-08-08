@@ -16,7 +16,6 @@ def read_from_files_write_to_file(path:str) -> str:
                     one_f.writelines(str(line))
 
 
-
 read_from_files_write_to_file(path=path,)
 
 

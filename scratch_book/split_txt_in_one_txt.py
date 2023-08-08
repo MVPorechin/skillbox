@@ -3,8 +3,6 @@ import os
 path = "D:\soft"
 
 
-
-
 def read_from_files_write_to_file(path:str) -> str:
     list_files = os.listdir(path)
     one_file = 'D:\one_file.txt'
@@ -17,7 +15,6 @@ def read_from_files_write_to_file(path:str) -> str:
 
                     one_f.writelines(str(line))
 
-    return 'ok'
 
 
 read_from_files_write_to_file(path=path,)

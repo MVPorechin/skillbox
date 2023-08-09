@@ -33,20 +33,23 @@ class Solution:
     def maxArea(self, height: List[int]) -> int:
         max_sum = 0
         left = 0
-        right = len(height)-1
+        right = len(height) - 1
 
-        while left != right:
-            gap = min_value(first=height[left], second=height[right]) * (right - 1)
-            max_sum = max_value(first=max_sum, second=gap)
+        if len(height) == 2 and height[left] == height[right]:
+            max_sum = height[left]
+        else:
+            while left != right:
+                gap = min_value(first=height[left], second=height[right]) * (right - 1)
+                max_sum = max_value(first=max_sum, second=gap)
 
-            if height[left] < height[right]:
-                left += 1
-            else:
-                right -= 1
+                if height[left] < height[right]:
+                    left += 1
+                else:
+                    right -= 1
 
         return max_sum
 
 
 my_sol = Solution()
-res = my_sol.maxArea(height=[1,1])
+res = my_sol.maxArea(height=[4,3,2,1,4])
 print(res)

@@ -7,6 +7,7 @@
     <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add split_file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scratch_book/11. Container With Most Water.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/11. Container With Most Water.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch_book/read_from_files_write_to_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/read_from_files_write_to_file.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,29 +51,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/python/skillbox/Module25&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/split",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;Python&quot;,
-      &quot;TEXT&quot;,
-      &quot;HTML&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python",
+      "TEXT",
+      "HTML"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\split" />
+      <recent name="D:\" />
       <recent name="D:\python\skillbox\Module25" />
       <recent name="C:\Users\m_porechin\Documents\python\skillbox\Module25" />
       <recent name="C:\Users\m_porechin\Desktop" />
-      <recent name="D:\games\Witch_Hunter\DEV\WitchHunter-0.18.0.0-pc\renpy\common" />
-      <recent name="D:\games\Insexual_Awakening\Rus\IA-1.0-pc-Rus\game\scripts\minigames" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\python\skillbox\scratch_book" />
@@ -690,12 +691,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scratch_book/11. Container With Most Water.py</url>
-          <line>42</line>
+          <line>17</line>
           <option name="timeStamp" value="189" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scratch_book/11. Container With Most Water.py</url>
-          <line>41</line>
+          <line>16</line>
           <option name="timeStamp" value="190" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

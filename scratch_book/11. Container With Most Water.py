@@ -3,49 +3,25 @@
 from typing import List
 
 
-def min_value(first: int, second: int) -> int:
-    """
-    Моя функция для сравнения 2ух чисел и нахождения минимума среди их.
-    :param first: первое целое число
-    :param second: второе целое число
-    :return int: минимальное число среди двух представленных
-    """
-    if first < second:
-        return first
-
-    return second
-
-
-def max_value(first: int, second: int) -> int:
-    """
-    Моя функция для сравнения 2ух чисел и нахождения максимума среди их.
-    :param first : Первое целое число
-    :param second: второе целое число
-    :return int: максимальное число среди двух представленных
-    """
-    if first > second:
-        return first
-
-    return second
-
-
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         max_sum = 0
         left = 0
         right = len(height) - 1
+        len_at_right = len(height)
 
         if len(height) == 2 and height[left] == height[right]:
             max_sum = height[left]
         else:
             while left != right:
-                gap = min_value(first=height[left], second=height[right]) * (right - 1)
-                max_sum = max_value(first=max_sum, second=gap)
+                gap = min(height[left], height[right]) * (len_at_right -1)
+                max_sum = max(max_sum, gap)
 
                 if height[left] < height[right]:
                     left += 1
                 else:
                     right -= 1
+                    len_at_right -= 1
 
         return max_sum
 

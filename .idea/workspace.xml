@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="11. container task - done">
-      <change afterPath="$PROJECT_DIR$/scratch_book/56. Merge Intervals.py" afterDir="false" />
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add 56 task">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch_book/56. Merge Intervals.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/56. Merge Intervals.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00069" summary="init">
-      <created>1684181190532</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1684181190532</updated>
     </task>
     <task id="LOCAL-00070" summary="init">
       <created>1684263137281</created>
@@ -550,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691841955811</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="add 56 task">
+      <created>1691961520868</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1691961520869</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,7 +573,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="изменения структуры папок и файлов. добавил практические работы, черновики перенес в одну папку" />
     <MESSAGE value="init" />
     <MESSAGE value="add m24" />
     <MESSAGE value="add lession 01 module 25" />
@@ -598,7 +597,8 @@
     <MESSAGE value="add task 11 leetcode" />
     <MESSAGE value="add split_file" />
     <MESSAGE value="11. container task - done" />
-    <option name="LAST_COMMIT_MESSAGE" value="11. container task - done" />
+    <MESSAGE value="add 56 task" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 56 task" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

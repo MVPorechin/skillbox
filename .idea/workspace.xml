@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="56 task done">
-      <change afterPath="$PROJECT_DIR$/scratch_book/7_task.py" afterDir="false" />
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="task 07 initial">
+      <change afterPath="$PROJECT_DIR$/Module28/lesson01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module28/lesson01_prac.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch_book/219. Contains Duplicate II.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +84,7 @@
       <recent name="D:\python\skillbox\pet_project\m22" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.56. Merge Intervals">
+  <component name="RunManager" selected="Python.lesson01">
     <configuration name="11. Container With Most Water" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,7 +106,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="121. Best Time to Buy and Sell Stock" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="219. Contains Duplicate II" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,7 +118,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_book/121. Best Time to Buy and Sell Stock.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_book/219. Contains Duplicate II.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,7 +148,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="5_task_" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="lesson01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -154,11 +156,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch_book" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module28" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_book/5_task_.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module28/lesson01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lesson01" />
+        <item itemvalue="Python.219. Contains Duplicate II" />
         <item itemvalue="Python.56. Merge Intervals" />
         <item itemvalue="Python.11. Container With Most Water" />
         <item itemvalue="Python.read_from_files_write_to_file" />
-        <item itemvalue="Python.5_task_" />
-        <item itemvalue="Python.121. Best Time to Buy and Sell Stock" />
       </list>
     </recent_temporary>
   </component>
@@ -206,13 +208,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00071" summary="add m24">
-      <created>1685516453979</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1685516453979</updated>
     </task>
     <task id="LOCAL-00072" summary="add lession 01 module 25">
       <created>1685523557675</created>
@@ -550,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692130241226</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="task 07 initial">
+      <created>1692220180819</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1692220180820</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,7 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add m24" />
     <MESSAGE value="add lession 01 module 25" />
     <MESSAGE value="add practice_m25_lession02.py&#10;lession 02 module 25&#10;task 01 and 02" />
     <MESSAGE value="add practice_m24_lession02.py&#10;lession 02 module 25" />
@@ -598,7 +599,8 @@
     <MESSAGE value="11. container task - done" />
     <MESSAGE value="add 56 task" />
     <MESSAGE value="56 task done" />
-    <option name="LAST_COMMIT_MESSAGE" value="56 task done" />
+    <MESSAGE value="task 07 initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 07 initial" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -707,6 +709,21 @@
           <url>file://$PROJECT_DIR$/scratch_book/read_from_files_write_to_file.py</url>
           <line>9</line>
           <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch_book/219. Contains Duplicate II.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch_book/219. Contains Duplicate II.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch_book/219. Contains Duplicate II.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="197" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -44,25 +44,3 @@ else:
 
 
 
-# def clerk() -> int:
-#     count_spec, time = map(int, input().split())
-#     floors = list(map(int, input().split()))
-#     position_first = int(input())
-#     min_max = floors[-1] - floors[0]
-#     value = min(min_max + floors[-1] - floors[position_first - 1],
-#                 min_max + floors[position_first - 1] - floors[0])
-#     if time and sum(floors[:position_first - 1]) <= position_first:
-#         return min_max
-#     else:
-#         return value
-#
-#
-# print(clerk())
-
-
-# count_spec, time = 6, 4
-# floors = [1,  2,  3,  6,  8,  25]
-# position_first = 5
-# count_spec, time = 5, 5
-# floors = [1,  4,  9,  16,  25]
-# position_first = 2

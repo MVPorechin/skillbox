@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="module 28 add">
-      <change afterPath="$PROJECT_DIR$/scratch_book/FAQ.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch_book/219. Contains Duplicate II.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/219. Contains Duplicate II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch_book/3_task_practice_kate.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/3_task_practice_kate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch_book/size_mesure.py" beforeDir="false" />
-    </list>
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="module 28 add" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -209,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00073" summary="add practice_m24_lession02.py&#10;lession 02 module 25">
-      <created>1685523742175</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1685523742175</updated>
     </task>
     <task id="LOCAL-00074" summary="add practice_m25_lession02.py&#10;lession 02 module 25&#10;task 01 and 02">
       <created>1685561220401</created>
@@ -553,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692570376437</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="module 28 add">
+      <created>1692716147693</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1692716147693</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

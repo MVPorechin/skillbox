@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="module 28 add" />
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add Grokking Algorithms" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00074" summary="add practice_m25_lession02.py&#10;lession 02 module 25&#10;task 01 and 02">
-      <created>1685561220401</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1685561220401</updated>
     </task>
     <task id="LOCAL-00075" summary="add practice_m24_lession02.py&#10;lession 02 module 25">
       <created>1685605421297</created>
@@ -547,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692716147693</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="add Grokking Algorithms">
+      <created>1692716575564</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1692716575564</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -570,7 +570,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add practice_m25_lession02.py&#10;lession 02 module 25&#10;task 01 and 02" />
     <MESSAGE value="add practice_m24_lession02.py&#10;lession 02 module 25" />
     <MESSAGE value="add practice_m24_lession02.py&#10;lession 03 module 25" />
     <MESSAGE value="add practice_m24_lession02.py&#10;lession 04 module 25" />
@@ -595,7 +594,8 @@
     <MESSAGE value="56 task done" />
     <MESSAGE value="task 07 initial" />
     <MESSAGE value="module 28 add" />
-    <option name="LAST_COMMIT_MESSAGE" value="module 28 add" />
+    <MESSAGE value="add Grokking Algorithms" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Grokking Algorithms" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

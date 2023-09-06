@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add MRO  practice module 28 lesson 01">
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="module 28 lesson 02">
+      <change afterPath="$PROJECT_DIR$/scratch_book/binary_tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module28/lesson02.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module28/lesson02.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <recent name="D:\python\skillbox\pet_project\m22" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.lesson02">
+  <component name="RunManager" selected="Python.lesson01_check">
     <configuration name="FAQ" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -190,8 +190,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.lesson02" />
         <item itemvalue="Python.lesson01_check" />
+        <item itemvalue="Python.lesson02" />
         <item itemvalue="Python.lesson01" />
         <item itemvalue="Python.size_mesure" />
         <item itemvalue="Python.FAQ" />
@@ -206,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00077" summary="add practice_m24_lession02.py&#10;lession 03 module 25">
-      <created>1685713639554</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1685713639554</updated>
     </task>
     <task id="LOCAL-00078" summary="add practice_m24_lession02.py&#10;lession 04 module 25">
       <created>1685795953502</created>
@@ -550,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692799797989</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="module 28 lesson 02">
+      <created>1692802771579</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1692802771579</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,7 +573,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add practice_m24_lession02.py&#10;lession 03 module 25" />
     <MESSAGE value="add practice_m24_lession02.py&#10;lession 04 module 25" />
     <MESSAGE value="add practice_m24_lession02.py&#10;lession 05 module 25 correct some words" />
     <MESSAGE value="add practice_m25" />
@@ -598,7 +597,8 @@
     <MESSAGE value="module 28 add" />
     <MESSAGE value="add Grokking Algorithms" />
     <MESSAGE value="add MRO  practice module 28 lesson 01" />
-    <option name="LAST_COMMIT_MESSAGE" value="add MRO  practice module 28 lesson 01" />
+    <MESSAGE value="module 28 lesson 02" />
+    <option name="LAST_COMMIT_MESSAGE" value="module 28 lesson 02" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

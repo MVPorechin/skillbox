@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="module 28 lesson 02">
-      <change afterPath="$PROJECT_DIR$/scratch_book/binary_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module28/lesson02_prac.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch_book/8_task.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch_book/_2023_tinkoff_t01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch_book/_2023_tinkoff_t02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch_book/_2023_tinkoff_t03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch_book/_2023_tinkoff_t04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch_book/_2023_tinkoff_t04_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch_book/_2023_tinkoff_t05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch_book/test_ex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

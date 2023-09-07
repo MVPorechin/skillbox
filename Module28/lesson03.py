@@ -28,3 +28,5 @@ with Timer() as t2:
 with Timer() as t3:
     print('Третья часть')
     val_3 = 200 * 200 ** 1000000
+
+

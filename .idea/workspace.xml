@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="module 28 lesson 02">
-      <change afterPath="$PROJECT_DIR$/Module28/lesson02_prac.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch_book/8_task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch_book/_2023_tinkoff_t01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch_book/_2023_tinkoff_t02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch_book/_2023_tinkoff_t03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch_book/_2023_tinkoff_t04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch_book/_2023_tinkoff_t04_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch_book/_2023_tinkoff_t05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch_book/test_ex.py" afterDir="false" />
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add lesson03">
+      <change afterPath="$PROJECT_DIR$/scratch_book/my_rpg_sib_edu_part03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch_book/sib_edu_part03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch_book/sib_edu_part03_01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -59,29 +53,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/python/skillbox/Module25&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/m_porechin/Documents/python/skillbox/scratch_book",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;Python&quot;,
-      &quot;TEXT&quot;,
-      &quot;HTML&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python",
+      "TEXT",
+      "HTML"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\m_porechin\Documents\python\skillbox\scratch_book" />
       <recent name="D:\python\skillbox\Module25" />
       <recent name="C:\Users\m_porechin\Documents\python\skillbox\Module25" />
       <recent name="C:\Users\m_porechin\Desktop" />
       <recent name="D:\games\Witch_Hunter\DEV\WitchHunter-0.18.0.0-pc\renpy\common" />
-      <recent name="D:\games\Insexual_Awakening\Rus\IA-1.0-pc-Rus\game\scripts\minigames" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\python\skillbox\scratch_book" />
@@ -91,28 +85,7 @@
       <recent name="D:\python\skillbox\pet_project\m22" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.lesson01_check">
-    <configuration name="FAQ" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="skillbox" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch_book" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_book/FAQ.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.sib_edu_part03_01">
     <configuration name="lesson01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,7 +149,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="size_mesure" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sib_edu_part03" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -188,7 +161,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_book/size_mesure.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_book/sib_edu_part03.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sib_edu_part03_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="skillbox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch_book" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_book/sib_edu_part03_01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sib_edu_part03_01" />
+        <item itemvalue="Python.sib_edu_part03" />
         <item itemvalue="Python.lesson01_check" />
         <item itemvalue="Python.lesson02" />
         <item itemvalue="Python.lesson01" />
-        <item itemvalue="Python.size_mesure" />
-        <item itemvalue="Python.FAQ" />
       </list>
     </recent_temporary>
   </component>
@@ -215,13 +209,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662386328184</updated>
-    </task>
-    <task id="LOCAL-00078" summary="add practice_m24_lession02.py&#10;lession 04 module 25">
-      <created>1685795953502</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1685795953503</updated>
     </task>
     <task id="LOCAL-00079" summary="add practice_m24_lession02.py&#10;lession 04 module 25">
       <created>1685797866692</created>
@@ -559,7 +546,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692802771579</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="add lesson03">
+      <created>1694099000053</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1694099000053</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +576,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add practice_m24_lession02.py&#10;lession 04 module 25" />
     <MESSAGE value="add practice_m24_lession02.py&#10;lession 05 module 25 correct some words" />
     <MESSAGE value="add practice_m25" />
     <MESSAGE value="practice 02 m26" />
@@ -607,7 +600,8 @@
     <MESSAGE value="add Grokking Algorithms" />
     <MESSAGE value="add MRO  practice module 28 lesson 01" />
     <MESSAGE value="module 28 lesson 02" />
-    <option name="LAST_COMMIT_MESSAGE" value="module 28 lesson 02" />
+    <MESSAGE value="add lesson03" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lesson03" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

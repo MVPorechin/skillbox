@@ -30,6 +30,7 @@ class Parent(Person):
 
 class Citizen(Parent, Employee):
     """ Житель - является и Родителем и Работником """
+    pass
 
 
 my_citizen = Citizen(name='Maxim', age=34)

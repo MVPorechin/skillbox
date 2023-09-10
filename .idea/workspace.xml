@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add some tasks">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module28/lesson01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module28/lesson01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module28/lesson03.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module28/lesson03.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scratch_book/binary_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/binary_tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,9 +47,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2ELsicX9tsHaYQJfJLAmSy0Tx3g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -57,23 +58,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/down/Ruff-0.0.20.zip",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/down/Ruff-0.0.20.zip&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Python",
-      "TEXT",
-      "HTML"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Python&quot;,
+      &quot;TEXT&quot;,
+      &quot;HTML&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\m_porechin\Documents\python\skillbox\scratch_book" />
@@ -133,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lesson02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="lesson03" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skillbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -145,7 +146,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module28/lesson02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module28/lesson03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,10 +200,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.binary_tree" />
+        <item itemvalue="Python.lesson03" />
         <item itemvalue="Python.sib_edu_part03_01" />
         <item itemvalue="Python.sib_edu_part03" />
         <item itemvalue="Python.lesson01_check" />
-        <item itemvalue="Python.lesson02" />
       </list>
     </recent_temporary>
   </component>
@@ -558,7 +559,7 @@
       <option name="project" value="LOCAL" />
       <updated>1694099000053</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +582,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add practice_m24_lession02.py&#10;lession 05 module 25 correct some words" />
     <MESSAGE value="add practice_m25" />
     <MESSAGE value="practice 02 m26" />
     <MESSAGE value="practice 02 m26&#10;add some scratches" />
@@ -606,7 +606,8 @@
     <MESSAGE value="add MRO  practice module 28 lesson 01" />
     <MESSAGE value="module 28 lesson 02" />
     <MESSAGE value="add lesson03" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lesson03" />
+    <MESSAGE value="add some tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some tasks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

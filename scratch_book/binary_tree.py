@@ -4,16 +4,24 @@ from typing import Optional
 
 
 class Compare:
-    def compare_tree(self, root_a: object, root_b: object) -> bool:
-        if root_a is None and root_b is None:
+    def compare_tree(self, p: object, q: object) -> bool:
+        if p is None and q is None:
             return True
-
-        if root_a is not None and root_b is not None:
-            return ((root_a.value == root_b.value) &
-                    self.compare_tree(root_a=root_a.left, root_b=root_b.left) &
-                    self.compare_tree(root_a=root_a.right, root_b=root_b.right))
-
+        if p is None or q is None:
+            return False
+        if p.val == q.val:
+            if self.compare_tree(p=p.left, q=q.left) and self.compare_tree(p=p.rigth, q=q.right):
+                return True
         return False
+        # if p is None and q is None:
+        #     return True
+        #
+        # if p is not None and q is not None:
+        #     return ((p.value == q.value) and
+        #             self.compare_tree(p=p.left, q=q.left) and
+        #             self.compare_tree(p=p.right, q=q.right))
+        #
+        # return False
 
 
 class TreeNode:
@@ -118,4 +126,4 @@ if __name__ == '__main__':
     # print('')
     # my_tree.print_tree()
     my_compare = Compare()
-    print(my_compare.compare_tree(root_a=my_tree, root_b=my_tree_two))
+    print(my_compare.compare_tree(p=my_tree, q=my_tree_two))

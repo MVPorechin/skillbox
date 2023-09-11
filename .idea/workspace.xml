@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add some tasks">
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add binary_tree.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module28/lesson01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module28/lesson01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module28/lesson03.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module28/lesson03.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scratch_book/binary_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_book/binary_tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -559,7 +557,7 @@
       <option name="project" value="LOCAL" />
       <updated>1694099000053</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +580,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add practice_m25" />
     <MESSAGE value="practice 02 m26" />
     <MESSAGE value="practice 02 m26&#10;add some scratches" />
     <MESSAGE value="add palindrome" />
@@ -607,7 +604,8 @@
     <MESSAGE value="module 28 lesson 02" />
     <MESSAGE value="add lesson03" />
     <MESSAGE value="add some tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some tasks" />
+    <MESSAGE value="add binary_tree.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add binary_tree.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,27 +1,5 @@
 import collections
-from idlelib.tree import TreeNode
 from typing import Optional
-
-
-class Compare:
-    def compare_tree(self, p: object, q: object) -> bool:
-        if p is None and q is None:
-            return True
-        if p is None or q is None:
-            return False
-        if p.val == q.val:
-            if self.compare_tree(p=p.left, q=q.left) and self.compare_tree(p=p.rigth, q=q.right):
-                return True
-        return False
-        # if p is None and q is None:
-        #     return True
-        #
-        # if p is not None and q is not None:
-        #     return ((p.value == q.value) and
-        #             self.compare_tree(p=p.left, q=q.left) and
-        #             self.compare_tree(p=p.right, q=q.right))
-        #
-        # return False
 
 
 class TreeNode:
@@ -67,7 +45,7 @@ class TreeNode:
                                  self.invert_tree_via_recurse(root=root.left))
         return root
 
-    def invert_tree_IPT(self, root: Optional[TreeNode]) -> object:
+    def invert_tree_ipt(self, root: Optional[TreeNode]) -> object:
         """
         Iterative Preorder Traversal
         :param root:
@@ -85,7 +63,7 @@ class TreeNode:
             if node.right:
                 stack.append(node.right)
 
-    def invert_tree_ILOT(self, root: Optional[TreeNode]) -> object:
+    def invert_tree_ilot(self, root: Optional[TreeNode]) -> object:
         """
         Iterative Level Order Traversal
         :param root:
@@ -103,6 +81,27 @@ class TreeNode:
             if node.right is not None:
                 queue.append(node.right)
         return root
+
+
+class CompareBinaryTree:
+    def compare_tree(self, p: object, q: object) -> bool:
+        if p is None and q is None:
+            return True
+        if p is None or q is None:
+            return False
+        if p.val == q.val:
+            if self.compare_tree(p=p.left, q=q.left) and self.compare_tree(p=p.rigth, q=q.right):
+                return True
+        return False
+        # if p is None and q is None:
+        #     return True
+        #
+        # if p is not None and q is not None:
+        #     return ((p.value == q.value) and
+        #             self.compare_tree(p=p.left, q=q.left) and
+        #             self.compare_tree(p=p.right, q=q.right))
+        #
+        # return False
 
 
 if __name__ == '__main__':
@@ -125,5 +124,5 @@ if __name__ == '__main__':
     # my_tree.invert_tree_IPT(root=my_tree)
     # print('')
     # my_tree.print_tree()
-    my_compare = Compare()
+    my_compare = CompareBinaryTree()
     print(my_compare.compare_tree(p=my_tree, q=my_tree_two))

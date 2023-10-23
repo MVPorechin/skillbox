@@ -8,10 +8,6 @@ class Solution:
         for n in nums:
             not_sort_list.append(pow(n, 2))
 
-        print(not_sort_list,
-              '\n',
-              nums)
-
 
 if __name__ == '__main__':
     my_sol = Solution()

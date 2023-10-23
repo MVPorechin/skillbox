@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add new method for binarytree">
-      <change afterPath="$PROJECT_DIR$/scratch_book/20. Squares of a Sorted Array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add new task">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -561,7 +559,7 @@
       <option name="project" value="LOCAL" />
       <updated>1694099000053</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +582,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="practice 02 m26&#10;add some scratches" />
     <MESSAGE value="add palindrome" />
     <MESSAGE value="add practice 04 m26" />
     <MESSAGE value="add task palindrome II" />
@@ -609,7 +606,8 @@
     <MESSAGE value="add some tasks" />
     <MESSAGE value="add binary_tree.py" />
     <MESSAGE value="add new method for binarytree" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new method for binarytree" />
+    <MESSAGE value="add new task" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new task" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

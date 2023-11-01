@@ -16,8 +16,8 @@ class File:
         return True
 
 
-with File('example.txt', 'w') as file:
-    file.write('Всем привет!')
+# with File('example.txt', 'w') as file:
+#     file.write('Всем привет!')
 
 
 # Задача 2. Пример
@@ -101,14 +101,14 @@ with File('example.txt', 'w') as file:
 class Example:
 
     def __init__(self):
-        print("Вызов __init__")
+        print("Вызов __init__\n")
 
     def __enter__(self):
-        print("Вызов __enter__")
+        print("Вызов __enter__\n")
         return True
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        print("Вызов __exit__")
+        print("Вызов __exit__\n")
         if exc_type:
             print(f'Тип ошибки: {exc_type}\nЗначение ошибки: {exc_val}\n"След" ошибки:{exc_tb}')
         return True  # первый вариант без этой строки, второй с этой строкой

@@ -15,5 +15,5 @@ class Solution:
 
 
 my_sol = Solution()
-result = my_sol.maxProfit(prices=[7,1,5,3,6,4])
+result = my_sol.maxProfit(prices=[7, 1, 5, 3, 6, 4])
 print(result)

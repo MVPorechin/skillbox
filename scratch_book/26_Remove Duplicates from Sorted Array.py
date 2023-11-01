@@ -19,5 +19,5 @@ class Solution(object):
 
 
 my_sol = Solution()
-value = my_sol.removeDuplicates(nums=[0,0,1,1,1,2,2,3,3,4])
+value = my_sol.removeDuplicates(nums=[0, 0, 1, 1, 1, 2, 2, 3, 3, 4])
 print(value)

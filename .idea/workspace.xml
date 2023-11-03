@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add 20 task leetcode">
-      <change afterPath="$PROJECT_DIR$/yandex_cup_2023/alg_1_task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yandex_cup_2023/alg_2_task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yandex_cup_2023/alg_3_task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yandex_cup_2023/alg_4_task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yandex_cup_2023/alg_5_task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yandex_cup_2023/alg_6_task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yandex_cup_2023/back_1_task.py" afterDir="false" />
+    <list default="true" id="d1781fd7-d0e9-4ff4-b3b6-5acdd557ddab" name="Changes" comment="add initial">
+      <change afterPath="$PROJECT_DIR$/scratch_book/cachemoney_automat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -566,7 +560,7 @@
       <option name="project" value="LOCAL" />
       <updated>1694099000053</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +583,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add practice 04 m26" />
     <MESSAGE value="add task palindrome II" />
     <MESSAGE value="add" />
     <MESSAGE value="add module 27, practice decarator" />
@@ -614,7 +607,8 @@
     <MESSAGE value="add new method for binarytree" />
     <MESSAGE value="add new task" />
     <MESSAGE value="add 20 task leetcode" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 20 task leetcode" />
+    <MESSAGE value="add initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="add initial" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

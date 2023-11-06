@@ -1,3 +1,50 @@
+import time
+
+
+class Timer:
+    def __init__(self) -> None:
+        print('начало сессии')
+        self.start = None
+
+    def __enter__(self) -> 'Timer':
+        self.start = time.time()
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb) -> bool:
+        print(time.time() - self.start)
+        print('конец сессии')
+        # if exc_type is TypeError:
+        #     return True
+        return True
+
+
+class File(Timer):
+    """
+    Контекст менеджер
+    при попытке открыть несуществующий файл менеджер автоматически создаёт и открывает этот файл в режиме записи;
+    на выходе из менеджера подавляются все исключения, связанные с файлами
+    """
+
+    def __init__(self, filename: str, mode: str) -> None:
+        self._filename = filename
+        self._mode = mode
+        self._file = None
+
+    def __enter__(self) -> None:
+        try:
+            self._file = open(filename=self._filename, mode=self._mode, encoding='utf-8')
+        except IOError:
+            self._file = open(filename=self._filename, mode="w", encoding='utf-8')
+        return self._file
+
+    def __exit__(self, exc_type, exc_val, exc_tb) -> None:
+        if exc_type is IOError:
+            self._file.close()
+            return True
+        else:
+            self._file.close()
+
+
 class CacheMoneyMachine:
     """
     Класс описывающий банкомат
@@ -26,8 +73,12 @@ class CacheMoneyMachine:
     def authorization(self, user_id: int):
         if user_id in self._database.keys():
             print(f'Привет, {user_id}!\n')
-            select = int(input('снять - 1\nпополнить - 2\nбаланс - 3\nподключить автоплатеж - 4\n перевести - '
-                               '5\nвыход - 0\n: '))
+            select = int(input('снять - 1\n'
+                               'пополнить - 2\n'
+                               'баланс - 3\n'
+                               'подключить автоплатеж - 4\n'
+                               'перевести -  5\n'
+                               'выход - 0\n: '))
             if select == 0 or select not in [1, 2, 3, 4, 5]:
                 return 0
             elif select == 1:
@@ -70,12 +121,15 @@ class CacheMoneyMachine:
             self._database[user_id] = balance
 
 
-my_atm = CacheMoneyMachine()
-my_atm.first_start(owner='gref german', location='99.0000000, 66.000000', name='alexander')
-print(my_atm.show_info())
-my_atm.update_database(user_id='1', balance=500)
-my_atm.update_database(user_id='1', balance=100)
-my_atm.update_database(user_id='2', balance=500)
-my_atm.update_database(user_id='2', balance=100)
-my_atm.authorization(user_id='2')
-my_atm.authorization(user_id='1')
+if __name__ == '__main__':
+    my_atm = CacheMoneyMachine()
+    my_atm.first_start(owner='gref german', location='99.0000000, 66.000000', name='alexander')
+    log = File(filename='log', mode='a')
+    with log as log_file:
+        log_file.write(my_atm.show_info())
+        log_file.write(my_atm.update_database(user_id='1', balance=500))
+        log_file.write(my_atm.update_database(user_id='1', balance=100))
+        log_file.write(my_atm.update_database(user_id='2', balance=500))
+        log_file.write(my_atm.update_database(user_id='2', balance=100))
+        log_file.write(my_atm.authorization(user_id='2'))
+        log_file.write(my_atm.authorization(user_id='1'))

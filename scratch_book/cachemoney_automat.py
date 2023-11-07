@@ -1,24 +1,59 @@
 import time
+import functools
+from datetime import datetime
+from typing import Callable, Any
 
 
-class Timer:
-    def __init__(self) -> None:
-        print('начало сессии')
-        self.start = None
-
-    def __enter__(self) -> 'Timer':
-        self.start = time.time()
-        return self
-
-    def __exit__(self, exc_type, exc_val, exc_tb) -> bool:
-        print(time.time() - self.start)
-        print('конец сессии')
-        # if exc_type is TypeError:
-        #     return True
-        return True
+def create_time(cls):
+    """
+    Декоратор класс. Выводит время создания инстранса класса
+    :param cls:
+    :return:
+    """
+    @functools.wraps(cls)
+    def wrapper(*args, **kwargs):
+        instance = cls(*args, **kwargs)
+        print(f'Время создания инстанса класса: {datetime.now()}')
+        return instance
+    return wrapper
 
 
-class File(Timer):
+def timer(func: Callable) -> Any:
+    """
+    Функция-таймер. Выводит время работы функции и возвращает ее результат
+    :param func: передаваемая функция
+    :return: Время в секундах
+    """
+    @functools.wraps(func)
+    def wrapped(*args, **kwargs):
+        started_at = time.time()
+        result = func(*args, **kwargs)
+        ended_at = time.time()
+        run_time = ended_at - started_at
+        print(f'Функция работала {run_time} секудн(ы)')
+        return result
+    return wrapped
+
+
+def for_all_methods(decorator: Callable) -> Callable:
+    """
+    Декоратор класса.
+    Получает другой декоратор и применяет его ко всем методам класса
+    :param decorator:
+    :return:
+    """
+    @functools.wraps(decorator)
+    def decorate(cls):
+        for i_method_name in dir(cls):
+            if i_method_name.startswith('__') is False:
+                cur_method = getattr(cls, i_method_name)
+                decorated_method = decorator(cur_method)
+                setattr(cls, i_method_name, decorated_method)
+        return cls
+    return decorate
+
+
+class File:
     """
     Контекст менеджер
     при попытке открыть несуществующий файл менеджер автоматически создаёт и открывает этот файл в режиме записи;
@@ -45,6 +80,8 @@ class File(Timer):
             self._file.close()
 
 
+@create_time
+@for_all_methods(timer)
 class CacheMoneyMachine:
     """
     Класс описывающий банкомат
@@ -124,12 +161,10 @@ class CacheMoneyMachine:
 if __name__ == '__main__':
     my_atm = CacheMoneyMachine()
     my_atm.first_start(owner='gref german', location='99.0000000, 66.000000', name='alexander')
-    log = File(filename='log', mode='a')
-    with log as log_file:
-        log_file.write(my_atm.show_info())
-        log_file.write(my_atm.update_database(user_id='1', balance=500))
-        log_file.write(my_atm.update_database(user_id='1', balance=100))
-        log_file.write(my_atm.update_database(user_id='2', balance=500))
-        log_file.write(my_atm.update_database(user_id='2', balance=100))
-        log_file.write(my_atm.authorization(user_id='2'))
-        log_file.write(my_atm.authorization(user_id='1'))
+    my_atm.show_info()
+    my_atm.update_database(user_id='1', balance=500)
+    my_atm.update_database(user_id='1', balance=100)
+    my_atm.update_database(user_id='2', balance=500)
+    my_atm.update_database(user_id='2', balance=100)
+    my_atm.authorization(user_id='2')
+    my_atm.authorization(user_id='1')

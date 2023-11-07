@@ -1,3 +1,6 @@
+from time import sleep
+
+
 # Задача 1. Повторение кода
 #
 # В одной из практик вы уже писали декоратор do_twice, который повторяет вызов декорируемой функции два раза.
@@ -6,9 +9,9 @@
 #
 #
 
-def do_nice(n):
+def repeat(n):
     def wrap_fun(func):
-        """декоратор do_twice, который дважды вызывает декорируемую функцию"""
+        """Декоратор repeat, который дважды вызывает декорируемую функцию"""
 
         def wrapped_func(*args, **kwargs):
             for _ in range(n):
@@ -20,12 +23,13 @@ def do_nice(n):
     return wrap_fun
 
 
-@do_nice(5)
+@repeat(5)
 def greeting(name: str) -> None:
     print('Привет, {name}!'.format(name=name))
 
 
 greeting("hello")
+
 
 # Задача 2. Замедление кода 2
 #
@@ -36,10 +40,8 @@ greeting("hello")
 # По умолчанию декоратор ждёт одну секунду. Помимо этого сделайте так, чтобы декоратор можно было использовать
 # как с аргументами, так и без них.
 
-from time import sleep
 
-
-def slow_it_now(_func=None, *, n=1):
+def slow_it_now(_func=None, *, n: int = 1):
     def slowdown_ns(func):
         def wrapper(*args, **kwargs):
             sleep(n)
@@ -57,7 +59,7 @@ def slow_it_now(_func=None, *, n=1):
 @slow_it_now
 def test() -> None:
     """
-    Проверка декоратора и вывод прстого сообщения
+    Проверка декоратора и вывод простого сообщения
 
     :return:
     """

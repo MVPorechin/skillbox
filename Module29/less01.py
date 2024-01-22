@@ -12,7 +12,7 @@ def next_num(num: int) -> Iterator[int]:
     finally:
         print('тут код выполниться в любом случае')
     print('выход из функции')
-    
+
 
 with next_num(-1) as next:
     print(f'следующее число: {next}')

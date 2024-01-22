@@ -27,6 +27,7 @@ with next_num(0) as next:
 пример 2
 """
 
+
 @contextmanager
 def timer() -> Iterator:
     start = time.time()

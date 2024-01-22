@@ -1,5 +1,5 @@
 import time
-from contextlib import  contextmanager
+from contextlib import contextmanager
 from collections.abc import Iterator
 
 # class Timer:

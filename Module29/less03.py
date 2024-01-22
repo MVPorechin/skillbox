@@ -29,7 +29,7 @@ def squares_sum() -> int:
     number = 100
     result = 0
     for _ in range(number + 1):
-        result += sum([i_num ** 2 for i_num in range(10000)])
+        result += sum([i_num ** 2 for i_num in range(100000)])
     return result
 
 

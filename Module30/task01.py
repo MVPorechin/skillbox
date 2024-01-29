@@ -19,7 +19,7 @@ def decorator_counter(func):
         nonlocal local_count
         global_count[func.__name__] = global_count.get(func.__name__, 0) + 1
         local_count[func.__name__] = local_count.get(func.__name__, 0) + 1
-        print(global_count, local_count)
+        print(f'global: {global_count},\nlocal: {local_count}')
         return func(*args, **kwargs)
 
     wrapped_func.check_count = local_count

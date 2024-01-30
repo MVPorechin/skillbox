@@ -38,16 +38,16 @@ grades = [
     {'name': 'Ramona', 'score': 64}, {'name': 'Jeannie', 'score': 22}, {'name': 'Aaron', 'score': 3},
     {'name': 'Ronnie', 'score': 47}, {'name': 'William', 'score': 94}, {'name': 'Sandra', 'score': 40},
 ]
-print(max(grades, key=lambda x: x["score"]))
-print(min(grades, key=lambda x: x["score"]))
+print(f'максимальное ключ-значение: {max(grades, key=lambda x: x["score"])}')
+print(f'минимальное ключ-значение: {min(grades, key=lambda x: x["score"])}')
 
-print(max(grades, key=lambda x: x["score"])['score'])
-print(min(grades, key=lambda x: x["score"])['score'])
+print(f'максимальное значение: {max(grades, key=lambda x: x["score"])['score']}')
+print(f'минимальное значение: {min(grades, key=lambda x: x["score"])['score']}')
 
-# Решение через map
-print(list(map(lambda x: x['score'], grades)))  # для наглядности
-print(max(map(lambda x: x['score'], grades)))
-print(min(map(lambda x: x['score'], grades)))
+print('Решение через map')
+print(f'список оценок: {list(map(lambda x: x['score'], grades))}')  # для наглядности
+print(f'максимальное значение: {max(map(lambda x: x['score'], grades))}')
+print(f'минимальное значение: {min(map(lambda x: x['score'], grades))}')
 
 
 # Задача 2. Сортировка

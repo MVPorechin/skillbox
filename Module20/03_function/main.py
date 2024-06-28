@@ -5,7 +5,7 @@ def slicer(input_tuple, random_number):
     list_input_tuple = list(set(input_tuple))
     if random_number == 0 or None:
         tuple()
-    elif input_tuple.count(random_number) > 1:
+    elif input_tuple.__count(random_number) > 1:
         return (random_number for index in range(len(list_input_tuple)))
     else:
         list_input_tuple[0], list_input_tuple[-1] = random_number, random_number

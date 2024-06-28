@@ -1,0 +1,346 @@
+{
+    "model": "T-65 X-wing",
+    "starship_class": "Starfighter",
+    "manufacturer": "Incom Corporation",
+    "cost_in_credits": "149999",
+    "length": "12.5",
+    "crew": "1",
+    "passengers": "0",
+    "max_atmosphering_speed": "1050",
+    "hyperdrive_rating": "1.0",
+    "MGLT": "100",
+    "cargo_capacity": "110",
+    "consumables": "1 week",
+    "pilots": [
+        "https://www.swapi.tech/api/people/1",
+        "https://www.swapi.tech/api/people/9",
+        "https://www.swapi.tech/api/people/18",
+        "https://www.swapi.tech/api/people/19"
+    ],
+    "created": "2020-09-17T17:55:06.604Z",
+    "edited": "2020-09-17T17:55:06.604Z",
+    "name": "X-wing",
+    "url": "https://www.swapi.tech/api/starships/12"
+}
+{
+    "height": "172",
+    "mass": "77",
+    "hair_color": "blond",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "19BBY",
+    "gender": "male",
+    "created": "2024-06-21T22:37:03.026Z",
+    "edited": "2024-06-21T22:37:03.026Z",
+    "name": "Luke Skywalker",
+    "homeworld": "https://www.swapi.tech/api/planets/1",
+    "url": "https://www.swapi.tech/api/people/1"
+}
+{
+    "height": "183",
+    "mass": "84",
+    "hair_color": "black",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "birth_year": "24BBY",
+    "gender": "male",
+    "created": "2024-06-21T22:37:03.026Z",
+    "edited": "2024-06-21T22:37:03.026Z",
+    "name": "Biggs Darklighter",
+    "homeworld": "https://www.swapi.tech/api/planets/1",
+    "url": "https://www.swapi.tech/api/people/9"
+}
+{
+    "height": "170",
+    "mass": "77",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "hazel",
+    "birth_year": "21BBY",
+    "gender": "male",
+    "created": "2024-06-21T22:37:03.026Z",
+    "edited": "2024-06-21T22:37:03.026Z",
+    "name": "Wedge Antilles",
+    "homeworld": "https://www.swapi.tech/api/planets/22",
+    "url": "https://www.swapi.tech/api/people/18"
+}
+{
+    "height": "180",
+    "mass": "110",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "unknown",
+    "gender": "male",
+    "created": "2024-06-21T22:37:03.026Z",
+    "edited": "2024-06-21T22:37:03.026Z",
+    "name": "Jek Tono Porkins",
+    "homeworld": "https://www.swapi.tech/api/planets/26",
+    "url": "https://www.swapi.tech/api/people/19"
+}
+{
+    "model": "T-65 X-wing",
+    "starship_class": "Starfighter",
+    "manufacturer": "Incom Corporation",
+    "cost_in_credits": "149999",
+    "length": "12.5",
+    "crew": "1",
+    "passengers": "0",
+    "max_atmosphering_speed": "1050",
+    "hyperdrive_rating": "1.0",
+    "MGLT": "100",
+    "cargo_capacity": "110",
+    "consumables": "1 week",
+    "pilots": [
+        "https://www.swapi.tech/api/people/1",
+        "https://www.swapi.tech/api/people/9",
+        "https://www.swapi.tech/api/people/18",
+        "https://www.swapi.tech/api/people/19"
+    ],
+    "created": "2020-09-17T17:55:06.604Z",
+    "edited": "2020-09-17T17:55:06.604Z",
+    "name": "X-wing",
+    "url": "https://www.swapi.tech/api/starships/12"
+}
+{
+    "height": "172",
+    "mass": "77",
+    "hair_color": "blond",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "19BBY",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Luke Skywalker",
+    "homeworld": "https://www.swapi.tech/api/planets/1",
+    "url": "https://www.swapi.tech/api/people/1"
+}
+{
+    "height": "183",
+    "mass": "84",
+    "hair_color": "black",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "birth_year": "24BBY",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Biggs Darklighter",
+    "homeworld": "https://www.swapi.tech/api/planets/1",
+    "url": "https://www.swapi.tech/api/people/9"
+}
+{
+    "height": "170",
+    "mass": "77",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "hazel",
+    "birth_year": "21BBY",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Wedge Antilles",
+    "homeworld": "https://www.swapi.tech/api/planets/22",
+    "url": "https://www.swapi.tech/api/people/18"
+}
+{
+    "height": "180",
+    "mass": "110",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "unknown",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Jek Tono Porkins",
+    "homeworld": "https://www.swapi.tech/api/planets/26",
+    "url": "https://www.swapi.tech/api/people/19"
+}
+[
+    "max_atmosphering_speed",
+    "pilots",
+    "starship_class",
+    "name"
+]
+{
+    "height": "172",
+    "mass": "77",
+    "hair_color": "blond",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "19BBY",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Luke Skywalker",
+    "homeworld": "https://www.swapi.tech/api/planets/1",
+    "url": "https://www.swapi.tech/api/people/1"
+}
+{
+    "height": "183",
+    "mass": "84",
+    "hair_color": "black",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "birth_year": "24BBY",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Biggs Darklighter",
+    "homeworld": "https://www.swapi.tech/api/planets/1",
+    "url": "https://www.swapi.tech/api/people/9"
+}
+{
+    "height": "170",
+    "mass": "77",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "hazel",
+    "birth_year": "21BBY",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Wedge Antilles",
+    "homeworld": "https://www.swapi.tech/api/planets/22",
+    "url": "https://www.swapi.tech/api/people/18"
+}
+{
+    "height": "180",
+    "mass": "110",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "unknown",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Jek Tono Porkins",
+    "homeworld": "https://www.swapi.tech/api/planets/26",
+    "url": "https://www.swapi.tech/api/people/19"
+}
+[
+    "max_atmosphering_speed",
+    "pilots",
+    "starship_class",
+    "name"
+]
+{
+    "height": "172",
+    "mass": "77",
+    "hair_color": "blond",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "19BBY",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Luke Skywalker",
+    "homeworld": "https://www.swapi.tech/api/planets/1",
+    "url": "https://www.swapi.tech/api/people/1"
+}
+{
+    "height": "183",
+    "mass": "84",
+    "hair_color": "black",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "birth_year": "24BBY",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Biggs Darklighter",
+    "homeworld": "https://www.swapi.tech/api/planets/1",
+    "url": "https://www.swapi.tech/api/people/9"
+}
+{
+    "height": "170",
+    "mass": "77",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "hazel",
+    "birth_year": "21BBY",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Wedge Antilles",
+    "homeworld": "https://www.swapi.tech/api/planets/22",
+    "url": "https://www.swapi.tech/api/people/18"
+}
+{
+    "height": "180",
+    "mass": "110",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "unknown",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Jek Tono Porkins",
+    "homeworld": "https://www.swapi.tech/api/planets/26",
+    "url": "https://www.swapi.tech/api/people/19"
+}
+[
+    "max_atmosphering_speed",
+    "pilots",
+    "starship_class",
+    "name"
+]
+{
+    "height": "172",
+    "mass": "77",
+    "hair_color": "blond",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "19BBY",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Luke Skywalker",
+    "homeworld": "https://www.swapi.tech/api/planets/1",
+    "url": "https://www.swapi.tech/api/people/1"
+}
+{
+    "height": "183",
+    "mass": "84",
+    "hair_color": "black",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "birth_year": "24BBY",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Biggs Darklighter",
+    "homeworld": "https://www.swapi.tech/api/planets/1",
+    "url": "https://www.swapi.tech/api/people/9"
+}
+{
+    "height": "170",
+    "mass": "77",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "hazel",
+    "birth_year": "21BBY",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Wedge Antilles",
+    "homeworld": "https://www.swapi.tech/api/planets/22",
+    "url": "https://www.swapi.tech/api/people/18"
+}
+{
+    "height": "180",
+    "mass": "110",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "unknown",
+    "gender": "male",
+    "created": "2024-06-22T22:48:15.250Z",
+    "edited": "2024-06-22T22:48:15.250Z",
+    "name": "Jek Tono Porkins",
+    "homeworld": "https://www.swapi.tech/api/planets/26",
+    "url": "https://www.swapi.tech/api/people/19"
+}

@@ -18,7 +18,7 @@ class PersonAttributes:
             else:
                 print(f'{self.name} промазал')
         elif enemy.health == 0:
-            enemy.status = False
+            enemy._data = False
         else:
             self.status = False
             print(f'{enemy.name} Одержал победу!')
@@ -30,8 +30,8 @@ class Fight:
         self.second_player = second_player
 
     def round(self):
-        while self.first_player.status and self.second_player.status:
-            if self.first_player.status:
+        while self.first_player._data and self.second_player._data:
+            if self.first_player._data:
                 self.first_player.attack(self.second_player)
-            if self.second_player.status:
+            if self.second_player._data:
                 self.second_player.attack(self.first_player)

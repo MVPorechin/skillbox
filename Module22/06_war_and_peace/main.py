@@ -6,7 +6,7 @@ def count_sym_in_text(string_from_file):
     ignore_symbol = ['–', '*', '&', '=', ')', '(', ';', '“', '…', '/', '°', '„', '`', '', ' ', '\n', '-', '"', '<', '>',
                      '№', '!', '?', ',', '.', ':', '«', '[', ']', '}', '{', '—', '\xa0', "'", '»']
 
-    return {sym: string_from_file.count(sym) for sym in set(string_from_file) if sym not in ignore_symbol}
+    return {sym: string_from_file.__count(sym) for sym in set(string_from_file) if sym not in ignore_symbol}
 
 
 def count_all_sym_in_text(path):
